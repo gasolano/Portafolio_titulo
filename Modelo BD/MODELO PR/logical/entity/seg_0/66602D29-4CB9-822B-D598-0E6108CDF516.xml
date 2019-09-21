@@ -1,0 +1,294 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="66602D29-4CB9-822B-D598-0E6108CDF516" name="FACTURA">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 22:01:14 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nro_factura" id="450B1F1B-DD03-D239-AE22-EE435B4CCDF4">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 22:46:45 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_servicio" id="CEDF5787-9A5F-A704-0C16-D9CF12CFE3FE">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 22:10:01 UTC</createdTime>
+<generatorID>BB37AA9D-0851-0116-8980-11E82B0AB629</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<referedAttribute>91FADFB4-56CE-F426-10EE-5F88157455DB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_empresa" id="425D020B-0226-B6DC-E94C-4EEE42285E51">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 22:54:44 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="giro_empresa" id="2EC06213-150A-3124-047C-77262138FDD7">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 22:56:09 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_empresa" id="EBAD721A-8703-56B4-CA3F-E6832C195CBD">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 22:56:09 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion_empresa" id="5147C2DA-951B-4FF0-E143-561932FE9653">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 22:56:51 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono_empresa" id="8A06D7D6-F9EE-209A-AAE0-8978E5239038">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 22:56:52 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut" id="C999B86F-B83B-2F23-D987-C0153D52F1BE">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 22:53:16 UTC</createdTime>
+<generatorID>20CDB448-E3E7-8A70-8143-5352F0F3AB80</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<referedAttribute>B6C0F7D1-A90E-3BDC-25FE-86CCADD3854A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_cliente" id="E965C816-F714-1F97-11BC-20871058BBEB">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 22:55:20 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="giro_cliente" id="F5F4F1D8-329B-28BD-BB93-B7413DC3B171">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 22:56:09 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion_cliente" id="14BB7178-647F-B608-6124-2D05593B1B8F">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 22:59:34 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comuna_cliente" id="4B7A2AFE-F5A6-F5F4-7881-CA98B889D7B9">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 22:59:34 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ciudad_cliente" id="688CA2D4-87A5-6EA7-77E8-94D6499667C1">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 22:59:46 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contacto_cliente" id="D73447F0-AF13-3F4F-A8E8-100E63011A18">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 22:59:46 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="EFE82B0D-E75D-852D-9449-47A75794DD0A">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 22:59:48 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor_neto" id="B3751E71-09FC-4A74-87C4-D20E08E2ED4E">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 22:59:48 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="iva" id="C455750C-924D-0633-3510-19A17DAD2FA1">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 23:03:41 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total" id="820FB024-2179-9FC4-BDF1-C016A7A3A835">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 23:03:41 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pago" id="CE700E8E-ADA6-E404-D0CD-A2430185EDDE">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:27:16 UTC</createdTime>
+<generatorID>4EEAFFCD-AB3B-7668-D98B-4D550D9B533E</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<referedAttribute>019C05DE-962F-C338-5EAA-0D49C8E1C2D0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nro_factura1" id="7E0F7C73-9960-81EF-10A7-B99537F40752">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:27:16 UTC</createdTime>
+<generatorID>4EEAFFCD-AB3B-7668-D98B-4D550D9B533E</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<referedAttribute>7FF99A31-6BC8-E8F6-625D-C2784D62C94A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3EC05D97-09A7-F6F6-6C87-BEC5EF5D8C74" name="Factura PK">
+<createdBy>bryan</createdBy>
+<createdTime>2019-08-31 22:14:22 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>450B1F1B-DD03-D239-AE22-EE435B4CCDF4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

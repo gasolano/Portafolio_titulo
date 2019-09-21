@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PrevencionSvc" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:1926/PrevencionSvc.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:1926/PrevencionSvc.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPrevencion_ValidarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IPrevencion_ValidarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPrevencion_ReadUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReadUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IPrevencion_ReadUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPrevencion">
+    <wsdl:operation name="ValidarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPrevencion/ValidarUsuario" message="tns:IPrevencion_ValidarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPrevencion/ValidarUsuarioResponse" message="tns:IPrevencion_ValidarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPrevencion/ReadUsuario" message="tns:IPrevencion_ReadUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPrevencion/ReadUsuarioResponse" message="tns:IPrevencion_ReadUsuario_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPrevencion" type="tns:IPrevencion">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IPrevencion/ValidarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadUsuario">
+      <soap:operation soapAction="http://tempuri.org/IPrevencion/ReadUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PrevencionSvc">
+    <wsdl:port name="BasicHttpBinding_IPrevencion" binding="tns:BasicHttpBinding_IPrevencion">
+      <soap:address location="http://localhost:1926/PrevencionSvc.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

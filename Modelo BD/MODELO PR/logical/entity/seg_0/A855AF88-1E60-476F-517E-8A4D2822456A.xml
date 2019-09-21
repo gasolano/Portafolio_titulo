@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A855AF88-1E60-476F-517E-8A4D2822456A" name="LLAMADO">
+<createdBy>cetecom</createdBy>
+<createdTime>2019-08-28 21:44:15 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_llamado" id="1A3E564B-AD02-86FC-BDD7-FE8C7EFD8FF1">
+<createdBy>cetecom</createdBy>
+<createdTime>2019-08-28 21:46:11 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_servicio" id="AB94C1C4-4449-FA2E-A8F8-0F50A6115169">
+<createdBy>cetecom</createdBy>
+<createdTime>2019-08-28 21:45:19 UTC</createdTime>
+<generatorID>A3ACEC01-F63A-96A2-9611-9D0948A73CB0</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<referedAttribute>91FADFB4-56CE-F426-10EE-5F88157455DB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut" id="17A08F75-C2F1-92E3-30D4-4440A8D651F1">
+<createdBy>cetecom</createdBy>
+<createdTime>2019-08-28 21:45:24 UTC</createdTime>
+<generatorID>73A8CA2B-9902-6657-122C-D3F06CB250D0</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<referedAttribute>80BB020A-1302-F82E-3630-2BEB62ACC349</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_empresa" id="EA595F4D-0209-F38A-271A-2F253CC1168A">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 02:48:18 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_hora_llamado" id="2658C186-6556-1140-2F96-E3ACF836F85E">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 02:47:26 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="duracion_min" id="023A4DD4-D3D9-D546-39B3-CB4C67DBBCCB">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 02:47:33 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ruta_grabacion" id="789FD4E1-ED28-5F45-B10D-64958B868CBB">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 02:47:39 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="observacion" id="A11F2B41-31AB-910F-A30D-DB9D2C5F8AA3">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 02:50:05 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="llamada_extra" id="552924ED-ECD5-8500-03E9-A75EB0DE0D2F">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 02:51:48 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2094A5A0-52E8-74D7-91C6-649171A38517" name="LLAMADO PK">
+<createdBy>cetecom</createdBy>
+<createdTime>2019-08-28 21:46:28 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1A3E564B-AD02-86FC-BDD7-FE8C7EFD8FF1</attributeRef>
+<attributeRef>AB94C1C4-4449-FA2E-A8F8-0F50A6115169</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

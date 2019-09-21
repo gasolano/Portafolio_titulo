@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1536D0F9-3F12-DF91-4EFC-5ACD1A0D6D62" name="SOLICITUD">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 01:50:36 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_solicitud" id="CA4E7428-9793-5F40-C0FA-8F3ED7BEA85A">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 01:55:04 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_servicio" id="A142B687-1738-E830-2D9F-A450817F6D65">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 01:58:33 UTC</createdTime>
+<generatorID>7DFB3932-B355-CA61-CB46-A727D5EE5DA0</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<referedAttribute>91FADFB4-56CE-F426-10EE-5F88157455DB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_tipo_solicitud" id="41BA241F-F9B4-B664-AACF-6EF93F787DFF">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 01:58:15 UTC</createdTime>
+<generatorID>6CA2994B-2913-F7C8-A51F-2C2F68F67FDB</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<referedAttribute>0AB36C96-CFC5-9426-3C8E-7B96C5771802</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut" id="1FE9082D-EB34-5EA0-94CC-3B61D1727565">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 05:11:18 UTC</createdTime>
+<generatorID>79718890-98A0-F07C-9A39-4585249661DE</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<referedAttribute>80BB020A-1302-F82E-3630-2BEB62ACC349</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mensaje" id="7D0DD3F5-83F5-EECD-0F20-A83F72DC988D">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 01:55:21 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cerrada" id="5D02C6A2-5DDB-CBAD-9F87-8CAFADD93BCB">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 04:03:34 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dar_baja" id="489CD93B-6BC0-894C-8E58-DA749B1C26F9">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:22:15 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A7F338FB-36B7-5E14-8BD0-52679AFE17CE" name="SOLICITUD PK">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:21:39 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A142B687-1738-E830-2D9F-A450817F6D65</attributeRef>
+<attributeRef>A142B687-1738-E830-2D9F-A450817F6D65</attributeRef>
+<attributeRef>CA4E7428-9793-5F40-C0FA-8F3ED7BEA85A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

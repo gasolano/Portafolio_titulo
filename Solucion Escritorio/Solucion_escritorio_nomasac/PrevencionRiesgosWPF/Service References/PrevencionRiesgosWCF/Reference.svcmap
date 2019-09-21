@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="eb65a691-5dd9-42eb-901a-7435d204570d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:6137/PrevencionSvc.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PrevencionSvc.wsdl" MetadataType="Wsdl" ID="5cae9589-1a8d-40ed-a9f7-cddfd424ce8c" SourceId="1" SourceUrl="http://localhost:6137/PrevencionSvc.svc?wsdl" />
+    <MetadataFile FileName="PrevencionSvc.xsd" MetadataType="Schema" ID="34ac983d-4b77-49e7-a99b-4d541835b23a" SourceId="1" SourceUrl="http://localhost:6137/PrevencionSvc.svc?xsd=xsd1" />
+    <MetadataFile FileName="PrevencionSvc1.xsd" MetadataType="Schema" ID="f1ff0c78-068d-4a19-8e01-7fdfbfe66f42" SourceId="1" SourceUrl="http://localhost:6137/PrevencionSvc.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

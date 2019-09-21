@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="53F3B92D-2EA8-6E8E-D803-7A7C860089A8" name="DETALLE_FACTURA">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>A3C3F583-53BD-7B75-A100-9C495ABFCA74</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_articulo" id="B06BCBA8-5DA6-9CA0-AFB9-50016F077846">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>03C77AEA-A268-41A4-E2A3-0D04C449457B</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FACTURA_nro_factura" id="0D75CD0A-E10A-5804-C77B-154371B243B8">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>6693E4F1-B7E4-8424-7CCF-2B0C786766B1</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3314F98E-6178-6EFF-7044-ECD6E22F2445" referredColumn="A56720C8-1A3D-738E-7876-1C7EA8DDF7BD"/>
+</associations>
+</Column>
+<Column name="descripcion" id="525A7CA9-A64E-6B7A-5E11-0861BE619EEA">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>C38D1537-0551-DE0B-565D-38FEEC276312</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad" id="4A889D48-EF12-52C0-DDCA-43AF39FA7DF0">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>1638E018-A1E6-2E05-5286-2C51AA174D5A</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio" id="5AE085B8-5D74-89A9-BFED-A474C2A8CE53">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>9F72A66C-234F-04E2-1AA1-9DE2C90532D8</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor" id="39877626-74D9-9418-BA6F-03FD29A4CAB9">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>4602A26C-905E-CEB1-2238-272C1F8DD129</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9772D293-6C99-4A96-DD83-67F968AA91E8" name="DETALLE_FACTURA_PK">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>F96B50CC-F302-2866-7A99-798F425D852E</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B06BCBA8-5DA6-9CA0-AFB9-50016F077846"/>
+<colUsage columnID="0D75CD0A-E10A-5804-C77B-154371B243B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B5433EE1-45B7-D9C1-83EE-99C4CF97D92E" name="DETALLE_FACTURA_FACTURA_FK">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>C0E02E29-E62B-E0BB-A4C2-A0F97C12217F</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D75CD0A-E10A-5804-C77B-154371B243B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

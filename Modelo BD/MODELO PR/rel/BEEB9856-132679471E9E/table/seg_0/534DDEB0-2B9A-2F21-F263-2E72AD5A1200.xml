@@ -1,0 +1,200 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="534DDEB0-2B9A-2F21-F263-2E72AD5A1200" name="SERVICIO">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>FFCA1478-BDA7-AF5D-5AF2-0901911B7103</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_servicio" id="6379DD87-AF51-CA7E-D324-CFAB2045B668">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>91FADFB4-56CE-F426-10EE-5F88157455DB</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut_empresa" id="27DB99CB-A95E-B643-9DE5-A915B2CAC2F7">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>889769FD-F037-B7BD-16DB-539524EE90D0</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C758B30D-D633-80CE-FA6B-1D384B3F3966" referredColumn="8003EEA1-68D6-A0D3-C2E8-45DCA31C672A"/>
+</associations>
+</Column>
+<Column name="id_plan" id="261EC78C-7AF0-5D03-A062-6CEB8BEA5DF1">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>B9FC1BFC-703C-D484-8CB6-59BA4608F6B9</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF2097A9-2574-E07F-1E98-B617FEA9669D" referredColumn="27F99BCF-57BA-3084-8CA8-220B781C0E7E"/>
+</associations>
+</Column>
+<Column name="fecha_vinculacion" id="CD3F2F5B-39D2-7C39-3792-64D87B18B9C2">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>FB4C7338-32EA-7A9F-31E9-70DD868C81D1</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dia_facturacion" id="EDD3EF57-6E06-D50B-3D88-829338BB7A4A">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>244F5093-DA78-1BF9-316F-787F477CB392</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dia_corte" id="B34C1096-CB34-2901-B8A2-782A1224D0BC">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>D95E7A53-A7BD-69B0-EA65-1B6EAE75EB92</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modcheck_año" id="00DE1050-F103-2CC7-7999-69E3C1BFAB01">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>6E389552-5FF7-9FA6-658C-014DA7888615</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="visitas_mes" id="E173FCBD-8F5F-97DD-B27E-FA918C3505C4">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>FA9D0849-7E39-74C5-B925-80F6DCFBE520</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="capacitacion_mes" id="60B54F3C-379D-BC87-4DF7-D785689119DD">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>313876F0-1D50-628F-D33E-D194FE36FA9C</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="asesorias_mes" id="CEB032E6-14F8-82BA-ED1C-482A21255342">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>6725E7A1-E1A1-BB1B-C682-344187EBAB64</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="actinfo_mes" id="70246BB5-AB2B-AA21-E586-31B1AD3AE627">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>72DB9C02-7D76-7E3D-8595-6F5C61148D2E</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dar_baja" id="5A7DA4D5-3D27-C936-CA5E-48370093545D">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>E6D61187-09E5-1A91-1BF1-A73ACF4EB4B1</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="670B3D98-D654-B390-71CC-D9A4B1BC29D6" name="SERVICIO_PK">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>24E5D641-3C34-2A5C-2866-6F75B5A5C260</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6379DD87-AF51-CA7E-D324-CFAB2045B668"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C982A2B-1C54-6E9D-658F-5933CF8AD74F" name="SERVICIO__IDX">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:10 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F70BB276-EEB3-E7B7-2C6F-70573EC29493</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="27DB99CB-A95E-B643-9DE5-A915B2CAC2F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97771AF4-812F-B3FB-7ED3-31284CF97061" name="SERVICIO_PLAN_PAGO_FK">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>2858809C-3249-1BB3-BC63-D76915263028</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="261EC78C-7AF0-5D03-A062-6CEB8BEA5DF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2891DB83-C726-73BA-6FE8-A58D69A827A2" name="SERVICIO_CLIENTE_EMPRESA_FK">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:10 UTC</createdTime>
+<generatorID>F70BB276-EEB3-E7B7-2C6F-70573EC29493</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27DB99CB-A95E-B643-9DE5-A915B2CAC2F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

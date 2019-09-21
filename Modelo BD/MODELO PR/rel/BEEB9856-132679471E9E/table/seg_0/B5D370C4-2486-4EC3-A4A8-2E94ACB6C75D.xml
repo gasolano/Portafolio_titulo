@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B5D370C4-2486-4EC3-A4A8-2E94ACB6C75D" name="CAPACITACION">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>BE9BDD84-43AA-6F3B-0A32-B0B2ADA30811</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_capacitacio" id="1DF1325C-463B-2848-09D7-A9D19D6EE5F4">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>2344EEA2-4CBB-6A9E-C4EF-98106501716B</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_servicio" id="E51B3E5F-764D-89E8-8871-1375E240831E">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>AB909E3D-9B19-5FF7-51BE-A0F4C260B613</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E31F26ED-9A00-4D51-0458-AFBF643E064C" referredColumn="6379DD87-AF51-CA7E-D324-CFAB2045B668"/>
+</associations>
+</Column>
+<Column name="rut" id="C716BE2F-CA5A-EC68-4B21-424CF29C3D01">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>26BF2128-B2D9-0F0E-4571-493CA3BA81F7</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88A79FA4-CE5C-EE9E-EAD2-03D21491B786" referredColumn="EC48CA68-1ED6-8439-056A-21C7E6D11B8D"/>
+</associations>
+</Column>
+<Column name="fecha_hora_registro" id="FC3E1813-DD51-BAD9-6E84-43BEC19AD7A8">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>71D2DBC7-6A44-2AE9-AD77-9A3EAD0A16C0</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_hora_realizacion" id="120AC4D1-2FBD-191C-D177-FF4777BB4943">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>CF917CE2-7B31-1202-180C-CC069B6B0FF2</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut_profesional2" id="563F3A75-7040-1C1B-9384-925FA1BF18B4">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>D32342C4-FD92-580E-064C-60F5F4AB0B6A</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut_profesional3" id="8B64A9EC-CFDE-3B41-0D0F-DB07B2C7CC60">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>7CC01F53-06C0-EAAE-9BA5-37A778E60079</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="realizado" id="681C380F-5650-17A7-C70D-7F03263115C0">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>D316A722-9A7E-4300-360D-3FED469A4640</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dar_baja" id="EBBA6264-AC54-3393-42A5-8BE8324D473E">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>21A08602-5B28-ABE5-62AF-CC10EABC4A00</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3C32EA1C-3330-D8A6-A2C9-949D70AD119B" name="CAPACITACION_PK">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>15838349-1941-599B-5203-D89FFD359E0D</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DF1325C-463B-2848-09D7-A9D19D6EE5F4"/>
+<colUsage columnID="E51B3E5F-764D-89E8-8871-1375E240831E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A59D577B-6185-3AAB-40F9-CC48B500C20E" name="CAPACITACION_SERVICIO_FK">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>B4344455-2B31-EE67-4728-0C7ADE969E8D</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E51B3E5F-764D-89E8-8871-1375E240831E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="020A45B1-06A2-D590-6E69-D77E104E3376" name="CAPACITACION_USUARIO_FK">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>48A39F08-F26D-4A18-971C-B2F0B0DB3DCB</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C716BE2F-CA5A-EC68-4B21-424CF29C3D01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

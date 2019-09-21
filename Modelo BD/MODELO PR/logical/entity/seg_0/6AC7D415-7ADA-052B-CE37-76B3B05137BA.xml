@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6AC7D415-7ADA-052B-CE37-76B3B05137BA" name="ACCIDENTE">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 04:17:47 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_accidente" id="D40CC55D-9CA2-DC50-92A4-6DA7B84287CA">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:14:09 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_servicio" id="A2CF4A77-457F-361E-7DE5-699F59E8EE72">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 04:18:44 UTC</createdTime>
+<generatorID>196F250D-1401-CCC6-741B-D709F4FD11F0</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<referedAttribute>91FADFB4-56CE-F426-10EE-5F88157455DB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut" id="292CC0CF-5DA8-090D-F315-A3C67DAE88F8">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 04:18:40 UTC</createdTime>
+<generatorID>2F864A66-108B-1DFD-A9ED-721B607F8FC6</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<referedAttribute>80BB020A-1302-F82E-3630-2BEB62ACC349</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_accidentado" id="EAC03393-C0EA-A966-295B-B4C193FC50C2">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 04:19:16 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_accidentado" id="BFAAB2E1-587D-2ED1-C6AB-035796FBD7A8">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 04:19:22 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellidop_accidentado" id="45FA3371-6DD3-CB7B-AD65-B0D3E2FD4BFE">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 04:19:22 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellidom_accidentado" id="E0C09921-F56C-24DE-4489-E79A02AFD619">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:15:30 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_hora_accidente" id="575A82FA-D7F2-0E21-3E09-A480B46CD6A3">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 04:20:53 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="F1D956FA-38FD-5C02-1BF2-8172B699C7B2">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 04:20:10 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EF762FCE-CA0E-E68F-AFF6-F87D87AD4EEB" name="ACCIDENTE PK">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 04:19:00 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A2CF4A77-457F-361E-7DE5-699F59E8EE72</attributeRef>
+<attributeRef>A2CF4A77-457F-361E-7DE5-699F59E8EE72</attributeRef>
+<attributeRef>D40CC55D-9CA2-DC50-92A4-6DA7B84287CA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

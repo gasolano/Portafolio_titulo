@@ -1,0 +1,29 @@
+﻿<Window x:Class="PaniolWPF.LoginWindows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PaniolWPF"
+        mc:Ignorable="d"
+        Title="No Mas Accidentes" Height="297.196" Width="451.846" BorderBrush="Black" Margin="0" FontFamily="Rockwell">
+    <Grid Margin="10,10,2,0" Cursor="None" RenderTransformOrigin="0.5,0.5" Height="99" VerticalAlignment="Top">
+        <Grid.Background>
+            <ImageBrush ImageSource="nomasacc.png" Stretch="Uniform" TileMode="FlipY">
+                <ImageBrush.RelativeTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1" ScaleX="1"/>
+                        <SkewTransform AngleY="0" AngleX="0"/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </ImageBrush.RelativeTransform>
+            </ImageBrush>
+        </Grid.Background>
+        <PasswordBox x:Name="boxPassword" HorizontalAlignment="Left" Height="19" Margin="198,159,0,-79" VerticalAlignment="Top" Width="110"/>
+        <TextBox x:Name="txtUser" HorizontalAlignment="Left" Height="20" Margin="198,134,0,-55" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"/>
+        <Label x:Name="label" Content="Rut :" HorizontalAlignment="Left" Height="28" Margin="100,134,0,-63" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="label1" Content="Contraseña :" HorizontalAlignment="Left" Height="25" Margin="100,159,0,-85" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="btnSesion" Content="Iniciar Sesión" HorizontalAlignment="Left" Height="22" Margin="315,212,0,-135" VerticalAlignment="Top" Width="88" FontWeight="Bold" Click="btnSesion_Click" />
+        <Label x:Name="lblInfo" Content="" HorizontalAlignment="Left" Height="100" Margin="126,196,0,-197" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

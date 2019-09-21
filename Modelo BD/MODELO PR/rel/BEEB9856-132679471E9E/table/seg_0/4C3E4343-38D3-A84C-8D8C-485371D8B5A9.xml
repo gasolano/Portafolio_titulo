@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4C3E4343-38D3-A84C-8D8C-485371D8B5A9" name="CHEQUEO">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>75EFD91F-A8BA-2FA3-97B8-3EB039AAB758</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_servicio" id="CC0F9BC2-5989-C281-2FE7-AE0D76856D17">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>2F55C99F-F965-865A-5A03-7988FA2F3B0E</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B506873-22D8-DC12-2D88-2A7F5B0ED5C4" referredColumn="C9B294CB-F8D4-1E21-AA7E-48F256A73975"/>
+</associations>
+</Column>
+<Column name="id_chequeo" id="EB32AE6C-7A7B-54FC-8C74-D11B503115EF">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>24C753E0-2C87-1AE3-6E63-14706CAFA7A2</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut_empresa" id="F33DCDD1-5EF2-C737-55E9-461C319485D1">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>9864BC01-0FD9-E92C-E79A-BE1D3F1C1CAC</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5596E3F2-C269-F517-06D1-373679FDA605" referredColumn="8003EEA1-68D6-A0D3-C2E8-45DCA31C672A"/>
+</associations>
+</Column>
+<Column name="id_visita" id="0B79D3DA-F1B8-7F09-B7B5-08E9F7C1D854">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>7596A629-ACDD-7A09-55D8-38311A435F6A</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B506873-22D8-DC12-2D88-2A7F5B0ED5C4" referredColumn="93C6B3B7-C2C2-50DD-FD08-B6DDFAE9BD53"/>
+</associations>
+</Column>
+<Column name="id_item" id="65D178F7-81BE-BB61-55B4-78D1E170E894">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>A77C8642-3C42-9465-C332-7E91F749CBE4</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="E0A097A5-010F-8069-C14D-5C3AF9FBEFB5">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>4AE47CDA-70A4-13C4-7A29-4B8AE7C798CC</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cumple" id="5A4C8E39-EF46-CEE7-D8A1-9D8D931FD6A3">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>6EC12D80-FA65-0ED4-2A67-1AA9821F42B6</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dar_baja" id="057DA381-3614-F1D6-E2F1-28BB8FB7DE94">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>DBFB4F62-20D8-5723-65AC-3B43B3E3BDD9</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8C63C7C0-417A-096D-303D-993CF9E2C3C1" name="CHEQUEO_PK">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>CE34AF77-CC7E-ADD4-8F28-26061B2BE2A0</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B79D3DA-F1B8-7F09-B7B5-08E9F7C1D854"/>
+<colUsage columnID="CC0F9BC2-5989-C281-2FE7-AE0D76856D17"/>
+<colUsage columnID="EB32AE6C-7A7B-54FC-8C74-D11B503115EF"/>
+<colUsage columnID="F33DCDD1-5EF2-C737-55E9-461C319485D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AF4C311C-DF63-C07E-5D9C-6044538EAE42" name="CHEQUEO_VISITA_FK">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>16B0F057-F901-C62D-E1C3-49AFAA1E1D53</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B79D3DA-F1B8-7F09-B7B5-08E9F7C1D854"/>
+<colUsage columnID="CC0F9BC2-5989-C281-2FE7-AE0D76856D17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0CA9A67E-2BB8-C5E0-3D87-8DEBC4797241" name="CHEQUEO_CLIENTE_EMPRESA_FK">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>56AFA47A-80ED-4D5F-DF10-04FE37314E88</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F33DCDD1-5EF2-C737-55E9-461C319485D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

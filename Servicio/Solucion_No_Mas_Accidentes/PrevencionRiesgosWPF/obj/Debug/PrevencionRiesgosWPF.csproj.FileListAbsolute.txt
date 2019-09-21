@@ -1,0 +1,28 @@
+C:\Users\bryan\Documents\Visual Studio 2015\Projects\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\PrevencionRiesgosWPF.csprojResolveAssemblyReference.cache
+C:\Users\bryan\Documents\Visual Studio 2015\Projects\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\LoginWindows.g.cs
+C:\Users\bryan\Documents\Visual Studio 2015\Projects\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\MainWindow.g.cs
+C:\Users\bryan\Documents\Visual Studio 2015\Projects\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\App.g.cs
+C:\Users\bryan\Documents\Visual Studio 2015\Projects\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\PrevencionRiesgosWPF_MarkupCompile.cache
+C:\Users\bryan\Documents\Visual Studio 2015\Projects\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\PrevencionRiesgosWPF_MarkupCompile.lref
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\bin\Debug\PrevencionRiesgosWPF.exe.config
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\bin\Debug\PrevencionRiesgosWPF.exe
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\bin\Debug\PrevencionRiesgosWPF.pdb
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\bin\Debug\PrevencionRiesgos.Negocio.dll
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\bin\Debug\PrevencionRiesgos.DALC.dll
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\bin\Debug\EntityFramework.dll
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\bin\Debug\PrevencionRiesgos.Negocio.pdb
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\bin\Debug\PrevencionRiesgos.DALC.pdb
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\bin\Debug\EntityFramework.xml
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\PrevencionRiesgosWPF.csprojResolveAssemblyReference.cache
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\LoginWindows.g.cs
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\App.g.cs
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\PrevencionRiesgosWPF_MarkupCompile.cache
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\PrevencionRiesgosWPF_MarkupCompile.lref
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\LoginWindows.baml
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\MainWindow.baml
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\PrevencionRiesgosWPF.g.resources
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\PrevencionRiesgosWPF.Properties.Resources.resources
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\PrevencionRiesgosWPF.csproj.GenerateResource.Cache
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\PrevencionRiesgosWPF.exe
+C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgosWPF\obj\Debug\PrevencionRiesgosWPF.pdb

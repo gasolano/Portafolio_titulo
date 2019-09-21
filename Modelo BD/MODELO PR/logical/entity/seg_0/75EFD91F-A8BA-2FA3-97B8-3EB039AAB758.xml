@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="75EFD91F-A8BA-2FA3-97B8-3EB039AAB758" name="CHEQUEO">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 01:23:19 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rut" id="9864BC01-0FD9-E92C-E79A-BE1D3F1C1CAC">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 01:30:37 UTC</createdTime>
+<generatorID>56AFA47A-80ED-4D5F-DF10-04FE37314E88</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<referedAttribute>B6C0F7D1-A90E-3BDC-25FE-86CCADD3854A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_chequeo" id="24C753E0-2C87-1AE3-6E63-14706CAFA7A2">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 01:24:06 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_visita" id="7596A629-ACDD-7A09-55D8-38311A435F6A">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 01:27:03 UTC</createdTime>
+<generatorID>16B0F057-F901-C62D-E1C3-49AFAA1E1D53</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<referedAttribute>F3401FAF-D972-6497-BE86-543D29823D8F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_item" id="A77C8642-3C42-9465-C332-7E91F749CBE4">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 01:24:07 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="4AE47CDA-70A4-13C4-7A29-4B8AE7C798CC">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 01:24:08 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cumple" id="6EC12D80-FA65-0ED4-2A67-1AA9821F42B6">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 01:24:09 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dar_baja" id="DBFB4F62-20D8-5723-65AC-3B43B3E3BDD9">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:02:09 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_servicio" id="2F55C99F-F965-865A-5A03-7988FA2F3B0E">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:03:59 UTC</createdTime>
+<generatorID>16B0F057-F901-C62D-E1C3-49AFAA1E1D53</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<referedAttribute>823F7C6E-EA5A-34E7-9957-D9158A3F167A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CE34AF77-CC7E-ADD4-8F28-26061B2BE2A0" name="CHEQUEO PK">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 01:27:03 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7596A629-ACDD-7A09-55D8-38311A435F6A</attributeRef>
+<attributeRef>2F55C99F-F965-865A-5A03-7988FA2F3B0E</attributeRef>
+<attributeRef>24C753E0-2C87-1AE3-6E63-14706CAFA7A2</attributeRef>
+<attributeRef>9864BC01-0FD9-E92C-E79A-BE1D3F1C1CAC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

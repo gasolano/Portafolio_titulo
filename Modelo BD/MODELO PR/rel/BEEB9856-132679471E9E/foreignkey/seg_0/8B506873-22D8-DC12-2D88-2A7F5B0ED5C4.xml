@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8B506873-22D8-DC12-2D88-2A7F5B0ED5C4" containerWithKeyObject="4C3E4343-38D3-A84C-8D8C-485371D8B5A9" localFKIndex="AF4C311C-DF63-C07E-5D9C-6044538EAE42" name="CHEQUEO_VISITA_FK">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>16B0F057-F901-C62D-E1C3-49AFAA1E1D53</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<referredTableLongName>VISITA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C1ACCA18-33BC-E180-2490-26FD0D2FDDDA</referredTableID>
+<keyObject>3D61A0CA-E609-5C86-18B5-2C580A3B35CB</keyObject>
+<referredKeyID>3D61A0CA-E609-5C86-18B5-2C580A3B35CB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_visita,id_servicio</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

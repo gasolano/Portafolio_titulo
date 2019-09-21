@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="26724492-5075-FDD1-4FBA-435FE19D5C58" name="ASESORIA">
+<createdBy>cetecom</createdBy>
+<createdTime>2019-08-28 21:41:18 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_asesoria" id="CE2296A0-5D48-84DC-4666-C4698838E102">
+<createdBy>cetecom</createdBy>
+<createdTime>2019-08-28 21:41:58 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_servicio" id="2CE4ADD5-A58A-52CF-BA64-D65E4D3370EA">
+<createdBy>cetecom</createdBy>
+<createdTime>2019-08-28 21:43:03 UTC</createdTime>
+<generatorID>72E4908F-1C25-EBB1-718A-C8D478486479</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<referedAttribute>91FADFB4-56CE-F426-10EE-5F88157455DB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut" id="D30EAA1D-1015-F7D3-A837-F58902854FCE">
+<createdBy>cetecom</createdBy>
+<createdTime>2019-08-28 21:43:11 UTC</createdTime>
+<generatorID>C5E90E67-C540-5BB7-0349-99DF47FDA721</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<referedAttribute>80BB020A-1302-F82E-3630-2BEB62ACC349</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_motivo" id="05D0C2CC-EED4-2265-CE19-37DE12EE83D0">
+<createdBy>cetecom</createdBy>
+<createdTime>2019-08-28 21:48:07 UTC</createdTime>
+<generatorID>F3D509E0-772C-58AF-C112-9EF89C5DD6BD</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<referedAttribute>2F0ABBCD-F0D4-6A87-BB60-3832C034216C</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="observacion" id="FBF4BBC2-A165-E23D-3D63-7CEF9720AE72">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 03:16:25 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="realizado" id="5FE3F26C-5D6F-EFE2-9481-FC17C041B7F3">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 04:03:28 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dar_baja" id="2F8E8014-08C1-05B3-169B-6B7AFF0DF2BE">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:19:31 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1DF37C9D-2482-7450-FE27-F5C1ECA2CCA8" name="ASESORIA PK">
+<createdBy>cetecom</createdBy>
+<createdTime>2019-08-28 21:42:45 UTC</createdTime>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<engineerTo>
+<item key="BEEB9856-0E9F-2D8A-8EBB-132679471E9E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CE2296A0-5D48-84DC-4666-C4698838E102</attributeRef>
+<attributeRef>2CE4ADD5-A58A-52CF-BA64-D65E4D3370EA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

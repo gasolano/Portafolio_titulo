@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:6137/PrevencionSvc.svc?wsdl" uri="src/conf/xml-resources/web-service-references/PrevencionSvc/wsdl/localhost_6137/PrevencionSvc.svc.wsdl"/>
+    <system systemId="http://localhost:6137/PrevencionSvc.svc?xsd=xsd0" uri="src/conf/xml-resources/web-service-references/PrevencionSvc/wsdl/localhost_6137/PrevencionSvc.svc.xsd_xsd0.xsd"/>
+    <system systemId="http://localhost:6137/PrevencionSvc.svc?xsd=xsd1" uri="src/conf/xml-resources/web-service-references/PrevencionSvc/wsdl/localhost_6137/PrevencionSvc.svc.xsd_xsd1.xsd"/>
+</catalog>

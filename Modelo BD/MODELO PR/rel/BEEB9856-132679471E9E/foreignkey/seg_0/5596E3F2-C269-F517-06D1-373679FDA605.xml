@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5596E3F2-C269-F517-06D1-373679FDA605" containerWithKeyObject="4C3E4343-38D3-A84C-8D8C-485371D8B5A9" localFKIndex="0CA9A67E-2BB8-C5E0-3D87-8DEBC4797241" name="CHEQUEO_CLIENTE_EMPRESA_FK">
+<createdBy>bryan</createdBy>
+<createdTime>2019-09-02 15:38:09 UTC</createdTime>
+<generatorID>56AFA47A-80ED-4D5F-DF10-04FE37314E88</generatorID>
+<ownerDesignName>MODELO PR</ownerDesignName>
+<referredTableLongName>CLIENTE_EMPRESA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C57DAA0A-C085-E6B4-635E-4EE062E3E4B2</referredTableID>
+<keyObject>3B34567D-6D06-C426-7B35-386AC9BB8A1B</keyObject>
+<referredKeyID>3B34567D-6D06-C426-7B35-386AC9BB8A1B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>rut</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

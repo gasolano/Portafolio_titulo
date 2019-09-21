@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="27d1c273070b44be999e6a3cdaaab977" Name="Diagram1">
+        <EntityTypeShape EntityType="Modelos.ACCIDENTE" Width="1.5" PointX="12" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.ASESORIA" Width="1.5" PointX="15" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.CAPACITACION" Width="1.5" PointX="15" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.CHEQUEO" Width="1.5" PointX="9.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.CIUDAD" Width="1.5" PointX="3" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.CLIENTE_EMPRESA" Width="1.5" PointX="7.5" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.COMUNA" Width="1.5" PointX="5.25" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.DETALLE_FACTURA" Width="1.5" PointX="15" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.FACTURA" Width="1.5" PointX="12.75" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.GIRO" Width="1.5" PointX="5.25" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.LLAMADO" Width="1.5" PointX="12" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.MOTIVO_ASESORIA" Width="1.5" PointX="12.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.MULTA" Width="1.5" PointX="18" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.PAGO" Width="1.5" PointX="10.5" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.PLAN_PAGO" Width="1.5" PointX="7.5" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.REGION" Width="1.5" PointX="0.75" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.SERVICIO" Width="1.5" PointX="9.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.SOLICITUD" Width="1.5" PointX="18" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.TIPO_SOLICITUD" Width="1.5" PointX="15.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.TIPO_USUARIO" Width="1.5" PointX="7.5" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.USUARIO" Width="1.5" PointX="9.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Modelos.VISITA" Width="1.5" PointX="18" PointY="17.875" IsExpanded="true" />
+        <AssociationConnector Association="Modelos.ACCIDENTE_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.ACCIDENTE_USUARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.ASESORIA_MOTIVO_ASESORIA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.ASESORIA_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.ASESORIA_USUARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.CAPACITACION_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.CAPACITACION_USUARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.CHEQUEO_CLIENTE_EMPRESA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.CHEQUEO_VISITA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.CIUDAD_REGION_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.COMUNA_CIUDAD_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.CLIENTE_EMPRESA_COMUNA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.CLIENTE_EMPRESA_GIRO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.FACTURA_CLIENTE_EMPRESA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.SERVICIO_CLIENTE_EMPRESA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.DETALLE_FACTURA_FACTURA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.FACTURA_PAGO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.FACTURA_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.LLAMADO_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.LLAMADO_USUARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.MULTA_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.MULTA_USUARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.SERVICIO_PLAN_PAGO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.SOLICITUD_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.VISITA_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.SOLICITUD_TIPO_SOLICITUD_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.SOLICITUD_USUARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.USUARIO_TIPO_USUARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="Modelos.VISITA_USUARIO_FK" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

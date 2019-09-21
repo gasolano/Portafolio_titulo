@@ -1,0 +1,828 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Modelos" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ACCIDENTE">
+    <Key>
+      <PropertyRef Name="ID_ACCIDENTE" />
+      <PropertyRef Name="ID_SERVICIO" />
+    </Key>
+    <Property Name="ID_ACCIDENTE" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ID_SERVICIO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RUT_ACCIDENTADO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NOMBRE_ACCIDENTADO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="APELLIDOP_ACCIDENTADO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="APELLIDOM_ACCIDENTADO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FECHA_HORA_ACCIDENTE" Type="DateTime" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="SERVICIO" Relationship="Self.ACCIDENTE_SERVICIO_FK" FromRole="ACCIDENTE" ToRole="SERVICIO" />
+    <NavigationProperty Name="USUARIO" Relationship="Self.ACCIDENTE_USUARIO_FK" FromRole="ACCIDENTE" ToRole="USUARIO" />
+  </EntityType>
+  <EntityType Name="ASESORIA">
+    <Key>
+      <PropertyRef Name="ID_ASESORIA" />
+      <PropertyRef Name="ID_SERVICIO" />
+    </Key>
+    <Property Name="ID_ASESORIA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ID_SERVICIO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_MOTIVO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="OBSERVACION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="REALIZADO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DAR_BAJA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="MOTIVO_ASESORIA" Relationship="Self.ASESORIA_MOTIVO_ASESORIA_FK" FromRole="ASESORIA" ToRole="MOTIVO_ASESORIA" />
+    <NavigationProperty Name="SERVICIO" Relationship="Self.ASESORIA_SERVICIO_FK" FromRole="ASESORIA" ToRole="SERVICIO" />
+    <NavigationProperty Name="USUARIO" Relationship="Self.ASESORIA_USUARIO_FK" FromRole="ASESORIA" ToRole="USUARIO" />
+  </EntityType>
+  <EntityType Name="CAPACITACION">
+    <Key>
+      <PropertyRef Name="ID_CAPACITACIO" />
+      <PropertyRef Name="ID_SERVICIO" />
+    </Key>
+    <Property Name="ID_CAPACITACIO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ID_SERVICIO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FECHA_HORA_REGISTRO" Type="DateTime" Nullable="false" />
+    <Property Name="FECHA_HORA_REALIZACION" Type="DateTime" Nullable="false" />
+    <Property Name="RUT_PROFESIONAL2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="RUT_PROFESIONAL3" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="REALIZADO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DAR_BAJA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="SERVICIO" Relationship="Self.CAPACITACION_SERVICIO_FK" FromRole="CAPACITACION" ToRole="SERVICIO" />
+    <NavigationProperty Name="USUARIO" Relationship="Self.CAPACITACION_USUARIO_FK" FromRole="CAPACITACION" ToRole="USUARIO" />
+  </EntityType>
+  <EntityType Name="CHEQUEO">
+    <Key>
+      <PropertyRef Name="ID_SERVICIO" />
+      <PropertyRef Name="ID_CHEQUEO" />
+      <PropertyRef Name="RUT_EMPRESA" />
+      <PropertyRef Name="ID_VISITA" />
+    </Key>
+    <Property Name="ID_SERVICIO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ID_CHEQUEO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUT_EMPRESA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_VISITA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ID_ITEM" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CUMPLE" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DAR_BAJA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="CLIENTE_EMPRESA" Relationship="Self.CHEQUEO_CLIENTE_EMPRESA_FK" FromRole="CHEQUEO" ToRole="CLIENTE_EMPRESA" />
+    <NavigationProperty Name="VISITA" Relationship="Self.CHEQUEO_VISITA_FK" FromRole="CHEQUEO" ToRole="VISITA" />
+  </EntityType>
+  <EntityType Name="CIUDAD">
+    <Key>
+      <PropertyRef Name="ID_CIUDAD" />
+    </Key>
+    <Property Name="ID_CIUDAD" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_REGION" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="REGION" Relationship="Self.CIUDAD_REGION_FK" FromRole="CIUDAD" ToRole="REGION" />
+    <NavigationProperty Name="COMUNA" Relationship="Self.COMUNA_CIUDAD_FK" FromRole="CIUDAD" ToRole="COMUNA" />
+  </EntityType>
+  <EntityType Name="CLIENTE_EMPRESA">
+    <Key>
+      <PropertyRef Name="RUT" />
+    </Key>
+    <Property Name="RUT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_GIRO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ID_COMUNA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TELEFONO" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DIRECCION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CORREO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CLIENTE_MOROSO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="CHEQUEO" Relationship="Self.CHEQUEO_CLIENTE_EMPRESA_FK" FromRole="CLIENTE_EMPRESA" ToRole="CHEQUEO" />
+    <NavigationProperty Name="COMUNA" Relationship="Self.CLIENTE_EMPRESA_COMUNA_FK" FromRole="CLIENTE_EMPRESA" ToRole="COMUNA" />
+    <NavigationProperty Name="GIRO" Relationship="Self.CLIENTE_EMPRESA_GIRO_FK" FromRole="CLIENTE_EMPRESA" ToRole="GIRO" />
+    <NavigationProperty Name="FACTURA" Relationship="Self.FACTURA_CLIENTE_EMPRESA_FK" FromRole="CLIENTE_EMPRESA" ToRole="FACTURA" />
+    <NavigationProperty Name="SERVICIO" Relationship="Self.SERVICIO_CLIENTE_EMPRESA_FK" FromRole="CLIENTE_EMPRESA" ToRole="SERVICIO" />
+  </EntityType>
+  <EntityType Name="COMUNA">
+    <Key>
+      <PropertyRef Name="ID_COMUNA" />
+    </Key>
+    <Property Name="ID_COMUNA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ID_CIUDAD" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="CIUDAD" Relationship="Self.COMUNA_CIUDAD_FK" FromRole="COMUNA" ToRole="CIUDAD" />
+    <NavigationProperty Name="CLIENTE_EMPRESA" Relationship="Self.CLIENTE_EMPRESA_COMUNA_FK" FromRole="COMUNA" ToRole="CLIENTE_EMPRESA" />
+  </EntityType>
+  <EntityType Name="DETALLE_FACTURA">
+    <Key>
+      <PropertyRef Name="ID_ARTICULO" />
+      <PropertyRef Name="FACTURA_NRO_FACTURA" />
+    </Key>
+    <Property Name="ID_ARTICULO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="FACTURA_NRO_FACTURA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CANTIDAD" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PRECIO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="VALOR" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="FACTURA" Relationship="Self.DETALLE_FACTURA_FACTURA_FK" FromRole="DETALLE_FACTURA" ToRole="FACTURA" />
+  </EntityType>
+  <EntityType Name="FACTURA">
+    <Key>
+      <PropertyRef Name="NRO_FACTURA" />
+    </Key>
+    <Property Name="NRO_FACTURA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ID_SERVICIO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUT_EMPRESA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GIRO_EMPRESA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NOMBRE_EMPRESA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DIRECCION_EMPRESA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONO_EMPRESA" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RUT_EMPRESA_CLI" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NOMBRE_CLIENTE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GIRO_CLIENTE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DIRECCION_CLIENTE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="COMUNA_CLIENTE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CIUDAD_CLIENTE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CONTACTO_CLIENTE" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FECHA" Type="DateTime" Nullable="false" />
+    <Property Name="VALOR_NETO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="IVA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="TOTAL" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ID_PAGO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="CLIENTE_EMPRESA" Relationship="Self.FACTURA_CLIENTE_EMPRESA_FK" FromRole="FACTURA" ToRole="CLIENTE_EMPRESA" />
+    <NavigationProperty Name="DETALLE_FACTURA" Relationship="Self.DETALLE_FACTURA_FACTURA_FK" FromRole="FACTURA" ToRole="DETALLE_FACTURA" />
+    <NavigationProperty Name="PAGO" Relationship="Self.FACTURA_PAGO_FK" FromRole="FACTURA" ToRole="PAGO" />
+    <NavigationProperty Name="SERVICIO" Relationship="Self.FACTURA_SERVICIO_FK" FromRole="FACTURA" ToRole="SERVICIO" />
+  </EntityType>
+  <EntityType Name="GIRO">
+    <Key>
+      <PropertyRef Name="ID_GIRO" />
+    </Key>
+    <Property Name="ID_GIRO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="CLIENTE_EMPRESA" Relationship="Self.CLIENTE_EMPRESA_GIRO_FK" FromRole="GIRO" ToRole="CLIENTE_EMPRESA" />
+  </EntityType>
+  <EntityType Name="LLAMADO">
+    <Key>
+      <PropertyRef Name="ID_LLAMADO" />
+      <PropertyRef Name="ID_SERVICIO" />
+    </Key>
+    <Property Name="ID_LLAMADO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ID_SERVICIO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RUT_EMPRESA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FECHA_HORA_LLAMADO" Type="DateTime" Nullable="false" />
+    <Property Name="DURACION_MIN" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUTA_GRABACION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OBSERVACION" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="LLAMADA_EXTRA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="SERVICIO" Relationship="Self.LLAMADO_SERVICIO_FK" FromRole="LLAMADO" ToRole="SERVICIO" />
+    <NavigationProperty Name="USUARIO" Relationship="Self.LLAMADO_USUARIO_FK" FromRole="LLAMADO" ToRole="USUARIO" />
+  </EntityType>
+  <EntityType Name="MOTIVO_ASESORIA">
+    <Key>
+      <PropertyRef Name="ID_MOTIVO" />
+    </Key>
+    <Property Name="ID_MOTIVO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ASESORIA" Relationship="Self.ASESORIA_MOTIVO_ASESORIA_FK" FromRole="MOTIVO_ASESORIA" ToRole="ASESORIA" />
+  </EntityType>
+  <EntityType Name="MULTA">
+    <Key>
+      <PropertyRef Name="ID_MULTA" />
+      <PropertyRef Name="ID_SERVICIO" />
+    </Key>
+    <Property Name="ID_MULTA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ID_SERVICIO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FECHA_HORA_MULTA" Type="DateTime" Nullable="false" />
+    <Property Name="FECHA_HORA_REGISTRO" Type="DateTime" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VALOR_MULTA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUTA_DOC_MULTA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="SERVICIO" Relationship="Self.MULTA_SERVICIO_FK" FromRole="MULTA" ToRole="SERVICIO" />
+    <NavigationProperty Name="USUARIO" Relationship="Self.MULTA_USUARIO_FK" FromRole="MULTA" ToRole="USUARIO" />
+  </EntityType>
+  <EntityType Name="PAGO">
+    <Key>
+      <PropertyRef Name="ID_PAGO" />
+    </Key>
+    <Property Name="ID_PAGO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="FUERA_DE_PLAZO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="FECHA_HORA_PAGO" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="FACTURA" Relationship="Self.FACTURA_PAGO_FK" FromRole="PAGO" ToRole="FACTURA" />
+  </EntityType>
+  <EntityType Name="PLAN_PAGO">
+    <Key>
+      <PropertyRef Name="ID_PLAN" />
+    </Key>
+    <Property Name="ID_PLAN" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="COSTO_FIJO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CANT_VISITAS_MES" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="MAX_MODCHECK_ANIO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="COST_EXT_MODCHECK" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="MAX_CAPAC_MES" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="COST_EXT_CAPAC" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="HORA_INI_LLAMADAS" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="HORA_FIN_LLAMADAS" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="COST_EXT_LLAMADAS" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="MAX_ASESORIAS_MES" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="COST_EXT_ASESO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="MAX_ACTINFO_MES" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="COST_EXT_ACTINFO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DAR_BAJA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="SERVICIO" Relationship="Self.SERVICIO_PLAN_PAGO_FK" FromRole="PLAN_PAGO" ToRole="SERVICIO" />
+  </EntityType>
+  <EntityType Name="REGION">
+    <Key>
+      <PropertyRef Name="ID_REGION" />
+    </Key>
+    <Property Name="ID_REGION" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="CIUDAD" Relationship="Self.CIUDAD_REGION_FK" FromRole="REGION" ToRole="CIUDAD" />
+  </EntityType>
+  <EntityType Name="SERVICIO">
+    <Key>
+      <PropertyRef Name="ID_SERVICIO" />
+    </Key>
+    <Property Name="ID_SERVICIO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUT_EMPRESA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_PLAN" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="FECHA_VINCULACION" Type="DateTime" Nullable="false" />
+    <Property Name="DIA_FACTURACION" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DIA_CORTE" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="MODCHECK_AÑO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="VISITAS_MES" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="CAPACITACION_MES" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ASESORIAS_MES" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ACTINFO_MES" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DAR_BAJA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="ACCIDENTE" Relationship="Self.ACCIDENTE_SERVICIO_FK" FromRole="SERVICIO" ToRole="ACCIDENTE" />
+    <NavigationProperty Name="ASESORIA" Relationship="Self.ASESORIA_SERVICIO_FK" FromRole="SERVICIO" ToRole="ASESORIA" />
+    <NavigationProperty Name="CAPACITACION" Relationship="Self.CAPACITACION_SERVICIO_FK" FromRole="SERVICIO" ToRole="CAPACITACION" />
+    <NavigationProperty Name="CLIENTE_EMPRESA" Relationship="Self.SERVICIO_CLIENTE_EMPRESA_FK" FromRole="SERVICIO" ToRole="CLIENTE_EMPRESA" />
+    <NavigationProperty Name="FACTURA" Relationship="Self.FACTURA_SERVICIO_FK" FromRole="SERVICIO" ToRole="FACTURA" />
+    <NavigationProperty Name="LLAMADO" Relationship="Self.LLAMADO_SERVICIO_FK" FromRole="SERVICIO" ToRole="LLAMADO" />
+    <NavigationProperty Name="MULTA" Relationship="Self.MULTA_SERVICIO_FK" FromRole="SERVICIO" ToRole="MULTA" />
+    <NavigationProperty Name="PLAN_PAGO" Relationship="Self.SERVICIO_PLAN_PAGO_FK" FromRole="SERVICIO" ToRole="PLAN_PAGO" />
+    <NavigationProperty Name="SOLICITUD" Relationship="Self.SOLICITUD_SERVICIO_FK" FromRole="SERVICIO" ToRole="SOLICITUD" />
+    <NavigationProperty Name="VISITA" Relationship="Self.VISITA_SERVICIO_FK" FromRole="SERVICIO" ToRole="VISITA" />
+  </EntityType>
+  <EntityType Name="SOLICITUD">
+    <Key>
+      <PropertyRef Name="ID_SOLICITUD" />
+      <PropertyRef Name="ID_SERVICIO" />
+    </Key>
+    <Property Name="ID_SOLICITUD" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ID_SERVICIO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ID_TIPO_SOLICITUD" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MENSAJE" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CERRADA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DAR_BAJA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="SERVICIO" Relationship="Self.SOLICITUD_SERVICIO_FK" FromRole="SOLICITUD" ToRole="SERVICIO" />
+    <NavigationProperty Name="TIPO_SOLICITUD" Relationship="Self.SOLICITUD_TIPO_SOLICITUD_FK" FromRole="SOLICITUD" ToRole="TIPO_SOLICITUD" />
+    <NavigationProperty Name="USUARIO" Relationship="Self.SOLICITUD_USUARIO_FK" FromRole="SOLICITUD" ToRole="USUARIO" />
+  </EntityType>
+  <EntityType Name="TIPO_SOLICITUD">
+    <Key>
+      <PropertyRef Name="ID_TIPO_SOLICITUD" />
+    </Key>
+    <Property Name="ID_TIPO_SOLICITUD" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="SOLICITUD" Relationship="Self.SOLICITUD_TIPO_SOLICITUD_FK" FromRole="TIPO_SOLICITUD" ToRole="SOLICITUD" />
+  </EntityType>
+  <EntityType Name="TIPO_USUARIO">
+    <Key>
+      <PropertyRef Name="ID_TIPO" />
+    </Key>
+    <Property Name="ID_TIPO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="USUARIO" Relationship="Self.USUARIO_TIPO_USUARIO_FK" FromRole="TIPO_USUARIO" ToRole="USUARIO" />
+  </EntityType>
+  <EntityType Name="USUARIO">
+    <Key>
+      <PropertyRef Name="RUT" />
+    </Key>
+    <Property Name="RUT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_TIPO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PASS" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NOMBRES" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="APELLIDOP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="APELLIDOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CORREO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TELEFONO" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DIRECCION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MOROSO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DAR_BAJA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUT_EMPRESA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ACCIDENTE" Relationship="Self.ACCIDENTE_USUARIO_FK" FromRole="USUARIO" ToRole="ACCIDENTE" />
+    <NavigationProperty Name="ASESORIA" Relationship="Self.ASESORIA_USUARIO_FK" FromRole="USUARIO" ToRole="ASESORIA" />
+    <NavigationProperty Name="CAPACITACION" Relationship="Self.CAPACITACION_USUARIO_FK" FromRole="USUARIO" ToRole="CAPACITACION" />
+    <NavigationProperty Name="LLAMADO" Relationship="Self.LLAMADO_USUARIO_FK" FromRole="USUARIO" ToRole="LLAMADO" />
+    <NavigationProperty Name="MULTA" Relationship="Self.MULTA_USUARIO_FK" FromRole="USUARIO" ToRole="MULTA" />
+    <NavigationProperty Name="SOLICITUD" Relationship="Self.SOLICITUD_USUARIO_FK" FromRole="USUARIO" ToRole="SOLICITUD" />
+    <NavigationProperty Name="TIPO_USUARIO" Relationship="Self.USUARIO_TIPO_USUARIO_FK" FromRole="USUARIO" ToRole="TIPO_USUARIO" />
+    <NavigationProperty Name="VISITA" Relationship="Self.VISITA_USUARIO_FK" FromRole="USUARIO" ToRole="VISITA" />
+  </EntityType>
+  <EntityType Name="VISITA">
+    <Key>
+      <PropertyRef Name="ID_SERVICIO" />
+      <PropertyRef Name="ID_VISITA" />
+    </Key>
+    <Property Name="ID_SERVICIO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ID_VISITA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OBSERVACION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PROPUESTA_MEJORA" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="REALIZADO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DAR_BAJA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="CHEQUEO" Relationship="Self.CHEQUEO_VISITA_FK" FromRole="VISITA" ToRole="CHEQUEO" />
+    <NavigationProperty Name="SERVICIO" Relationship="Self.VISITA_SERVICIO_FK" FromRole="VISITA" ToRole="SERVICIO" />
+    <NavigationProperty Name="USUARIO" Relationship="Self.VISITA_USUARIO_FK" FromRole="VISITA" ToRole="USUARIO" />
+  </EntityType>
+  <Association Name="ACCIDENTE_SERVICIO_FK">
+    <End Role="SERVICIO" Type="Self.SERVICIO" Multiplicity="1" />
+    <End Role="ACCIDENTE" Type="Self.ACCIDENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SERVICIO">
+        <PropertyRef Name="ID_SERVICIO" />
+      </Principal>
+      <Dependent Role="ACCIDENTE">
+        <PropertyRef Name="ID_SERVICIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ACCIDENTE_USUARIO_FK">
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="1" />
+    <End Role="ACCIDENTE" Type="Self.ACCIDENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="RUT" />
+      </Principal>
+      <Dependent Role="ACCIDENTE">
+        <PropertyRef Name="RUT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ASESORIA_MOTIVO_ASESORIA_FK">
+    <End Role="MOTIVO_ASESORIA" Type="Self.MOTIVO_ASESORIA" Multiplicity="1" />
+    <End Role="ASESORIA" Type="Self.ASESORIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MOTIVO_ASESORIA">
+        <PropertyRef Name="ID_MOTIVO" />
+      </Principal>
+      <Dependent Role="ASESORIA">
+        <PropertyRef Name="ID_MOTIVO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ASESORIA_SERVICIO_FK">
+    <End Role="SERVICIO" Type="Self.SERVICIO" Multiplicity="1" />
+    <End Role="ASESORIA" Type="Self.ASESORIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SERVICIO">
+        <PropertyRef Name="ID_SERVICIO" />
+      </Principal>
+      <Dependent Role="ASESORIA">
+        <PropertyRef Name="ID_SERVICIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ASESORIA_USUARIO_FK">
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="1" />
+    <End Role="ASESORIA" Type="Self.ASESORIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="RUT" />
+      </Principal>
+      <Dependent Role="ASESORIA">
+        <PropertyRef Name="RUT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CAPACITACION_SERVICIO_FK">
+    <End Role="SERVICIO" Type="Self.SERVICIO" Multiplicity="1" />
+    <End Role="CAPACITACION" Type="Self.CAPACITACION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SERVICIO">
+        <PropertyRef Name="ID_SERVICIO" />
+      </Principal>
+      <Dependent Role="CAPACITACION">
+        <PropertyRef Name="ID_SERVICIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CAPACITACION_USUARIO_FK">
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="1" />
+    <End Role="CAPACITACION" Type="Self.CAPACITACION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="RUT" />
+      </Principal>
+      <Dependent Role="CAPACITACION">
+        <PropertyRef Name="RUT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CHEQUEO_CLIENTE_EMPRESA_FK">
+    <End Role="CLIENTE_EMPRESA" Type="Self.CLIENTE_EMPRESA" Multiplicity="1" />
+    <End Role="CHEQUEO" Type="Self.CHEQUEO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTE_EMPRESA">
+        <PropertyRef Name="RUT" />
+      </Principal>
+      <Dependent Role="CHEQUEO">
+        <PropertyRef Name="RUT_EMPRESA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CHEQUEO_VISITA_FK">
+    <End Role="VISITA" Type="Self.VISITA" Multiplicity="1" />
+    <End Role="CHEQUEO" Type="Self.CHEQUEO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VISITA">
+        <PropertyRef Name="ID_VISITA" />
+        <PropertyRef Name="ID_SERVICIO" />
+      </Principal>
+      <Dependent Role="CHEQUEO">
+        <PropertyRef Name="ID_VISITA" />
+        <PropertyRef Name="ID_SERVICIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CIUDAD_REGION_FK">
+    <End Role="REGION" Type="Self.REGION" Multiplicity="1" />
+    <End Role="CIUDAD" Type="Self.CIUDAD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="REGION">
+        <PropertyRef Name="ID_REGION" />
+      </Principal>
+      <Dependent Role="CIUDAD">
+        <PropertyRef Name="ID_REGION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="COMUNA_CIUDAD_FK">
+    <End Role="CIUDAD" Type="Self.CIUDAD" Multiplicity="1" />
+    <End Role="COMUNA" Type="Self.COMUNA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CIUDAD">
+        <PropertyRef Name="ID_CIUDAD" />
+      </Principal>
+      <Dependent Role="COMUNA">
+        <PropertyRef Name="ID_CIUDAD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CLIENTE_EMPRESA_COMUNA_FK">
+    <End Role="COMUNA" Type="Self.COMUNA" Multiplicity="1" />
+    <End Role="CLIENTE_EMPRESA" Type="Self.CLIENTE_EMPRESA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="COMUNA">
+        <PropertyRef Name="ID_COMUNA" />
+      </Principal>
+      <Dependent Role="CLIENTE_EMPRESA">
+        <PropertyRef Name="ID_COMUNA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CLIENTE_EMPRESA_GIRO_FK">
+    <End Role="GIRO" Type="Self.GIRO" Multiplicity="1" />
+    <End Role="CLIENTE_EMPRESA" Type="Self.CLIENTE_EMPRESA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIRO">
+        <PropertyRef Name="ID_GIRO" />
+      </Principal>
+      <Dependent Role="CLIENTE_EMPRESA">
+        <PropertyRef Name="ID_GIRO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FACTURA_CLIENTE_EMPRESA_FK">
+    <End Role="CLIENTE_EMPRESA" Type="Self.CLIENTE_EMPRESA" Multiplicity="1" />
+    <End Role="FACTURA" Type="Self.FACTURA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTE_EMPRESA">
+        <PropertyRef Name="RUT" />
+      </Principal>
+      <Dependent Role="FACTURA">
+        <PropertyRef Name="RUT_EMPRESA_CLI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SERVICIO_CLIENTE_EMPRESA_FK">
+    <End Role="CLIENTE_EMPRESA" Type="Self.CLIENTE_EMPRESA" Multiplicity="1" />
+    <End Role="SERVICIO" Type="Self.SERVICIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTE_EMPRESA">
+        <PropertyRef Name="RUT" />
+      </Principal>
+      <Dependent Role="SERVICIO">
+        <PropertyRef Name="RUT_EMPRESA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DETALLE_FACTURA_FACTURA_FK">
+    <End Role="FACTURA" Type="Self.FACTURA" Multiplicity="1" />
+    <End Role="DETALLE_FACTURA" Type="Self.DETALLE_FACTURA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FACTURA">
+        <PropertyRef Name="NRO_FACTURA" />
+      </Principal>
+      <Dependent Role="DETALLE_FACTURA">
+        <PropertyRef Name="FACTURA_NRO_FACTURA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FACTURA_PAGO_FK">
+    <End Role="PAGO" Type="Self.PAGO" Multiplicity="1" />
+    <End Role="FACTURA" Type="Self.FACTURA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PAGO">
+        <PropertyRef Name="ID_PAGO" />
+      </Principal>
+      <Dependent Role="FACTURA">
+        <PropertyRef Name="ID_PAGO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FACTURA_SERVICIO_FK">
+    <End Role="SERVICIO" Type="Self.SERVICIO" Multiplicity="1" />
+    <End Role="FACTURA" Type="Self.FACTURA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SERVICIO">
+        <PropertyRef Name="ID_SERVICIO" />
+      </Principal>
+      <Dependent Role="FACTURA">
+        <PropertyRef Name="ID_SERVICIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LLAMADO_SERVICIO_FK">
+    <End Role="SERVICIO" Type="Self.SERVICIO" Multiplicity="1" />
+    <End Role="LLAMADO" Type="Self.LLAMADO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SERVICIO">
+        <PropertyRef Name="ID_SERVICIO" />
+      </Principal>
+      <Dependent Role="LLAMADO">
+        <PropertyRef Name="ID_SERVICIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LLAMADO_USUARIO_FK">
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="1" />
+    <End Role="LLAMADO" Type="Self.LLAMADO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="RUT" />
+      </Principal>
+      <Dependent Role="LLAMADO">
+        <PropertyRef Name="RUT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MULTA_SERVICIO_FK">
+    <End Role="SERVICIO" Type="Self.SERVICIO" Multiplicity="1" />
+    <End Role="MULTA" Type="Self.MULTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SERVICIO">
+        <PropertyRef Name="ID_SERVICIO" />
+      </Principal>
+      <Dependent Role="MULTA">
+        <PropertyRef Name="ID_SERVICIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MULTA_USUARIO_FK">
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="1" />
+    <End Role="MULTA" Type="Self.MULTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="RUT" />
+      </Principal>
+      <Dependent Role="MULTA">
+        <PropertyRef Name="RUT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SERVICIO_PLAN_PAGO_FK">
+    <End Role="PLAN_PAGO" Type="Self.PLAN_PAGO" Multiplicity="1" />
+    <End Role="SERVICIO" Type="Self.SERVICIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PLAN_PAGO">
+        <PropertyRef Name="ID_PLAN" />
+      </Principal>
+      <Dependent Role="SERVICIO">
+        <PropertyRef Name="ID_PLAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SOLICITUD_SERVICIO_FK">
+    <End Role="SERVICIO" Type="Self.SERVICIO" Multiplicity="1" />
+    <End Role="SOLICITUD" Type="Self.SOLICITUD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SERVICIO">
+        <PropertyRef Name="ID_SERVICIO" />
+      </Principal>
+      <Dependent Role="SOLICITUD">
+        <PropertyRef Name="ID_SERVICIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="VISITA_SERVICIO_FK">
+    <End Role="SERVICIO" Type="Self.SERVICIO" Multiplicity="1" />
+    <End Role="VISITA" Type="Self.VISITA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SERVICIO">
+        <PropertyRef Name="ID_SERVICIO" />
+      </Principal>
+      <Dependent Role="VISITA">
+        <PropertyRef Name="ID_SERVICIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SOLICITUD_TIPO_SOLICITUD_FK">
+    <End Role="TIPO_SOLICITUD" Type="Self.TIPO_SOLICITUD" Multiplicity="1" />
+    <End Role="SOLICITUD" Type="Self.SOLICITUD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPO_SOLICITUD">
+        <PropertyRef Name="ID_TIPO_SOLICITUD" />
+      </Principal>
+      <Dependent Role="SOLICITUD">
+        <PropertyRef Name="ID_TIPO_SOLICITUD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SOLICITUD_USUARIO_FK">
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="1" />
+    <End Role="SOLICITUD" Type="Self.SOLICITUD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="RUT" />
+      </Principal>
+      <Dependent Role="SOLICITUD">
+        <PropertyRef Name="RUT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="USUARIO_TIPO_USUARIO_FK">
+    <End Role="TIPO_USUARIO" Type="Self.TIPO_USUARIO" Multiplicity="1" />
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPO_USUARIO">
+        <PropertyRef Name="ID_TIPO" />
+      </Principal>
+      <Dependent Role="USUARIO">
+        <PropertyRef Name="ID_TIPO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="VISITA_USUARIO_FK">
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="1" />
+    <End Role="VISITA" Type="Self.VISITA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="RUT" />
+      </Principal>
+      <Dependent Role="VISITA">
+        <PropertyRef Name="RUT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ACCIDENTE" EntityType="Self.ACCIDENTE" />
+    <EntitySet Name="ASESORIA" EntityType="Self.ASESORIA" />
+    <EntitySet Name="CAPACITACION" EntityType="Self.CAPACITACION" />
+    <EntitySet Name="CHEQUEO" EntityType="Self.CHEQUEO" />
+    <EntitySet Name="CIUDAD" EntityType="Self.CIUDAD" />
+    <EntitySet Name="CLIENTE_EMPRESA" EntityType="Self.CLIENTE_EMPRESA" />
+    <EntitySet Name="COMUNA" EntityType="Self.COMUNA" />
+    <EntitySet Name="DETALLE_FACTURA" EntityType="Self.DETALLE_FACTURA" />
+    <EntitySet Name="FACTURA" EntityType="Self.FACTURA" />
+    <EntitySet Name="GIRO" EntityType="Self.GIRO" />
+    <EntitySet Name="LLAMADO" EntityType="Self.LLAMADO" />
+    <EntitySet Name="MOTIVO_ASESORIA" EntityType="Self.MOTIVO_ASESORIA" />
+    <EntitySet Name="MULTA" EntityType="Self.MULTA" />
+    <EntitySet Name="PAGO" EntityType="Self.PAGO" />
+    <EntitySet Name="PLAN_PAGO" EntityType="Self.PLAN_PAGO" />
+    <EntitySet Name="REGION" EntityType="Self.REGION" />
+    <EntitySet Name="SERVICIO" EntityType="Self.SERVICIO" />
+    <EntitySet Name="SOLICITUD" EntityType="Self.SOLICITUD" />
+    <EntitySet Name="TIPO_SOLICITUD" EntityType="Self.TIPO_SOLICITUD" />
+    <EntitySet Name="TIPO_USUARIO" EntityType="Self.TIPO_USUARIO" />
+    <EntitySet Name="USUARIO" EntityType="Self.USUARIO" />
+    <EntitySet Name="VISITA" EntityType="Self.VISITA" />
+    <AssociationSet Name="ACCIDENTE_SERVICIO_FK" Association="Self.ACCIDENTE_SERVICIO_FK">
+      <End Role="SERVICIO" EntitySet="SERVICIO" />
+      <End Role="ACCIDENTE" EntitySet="ACCIDENTE" />
+    </AssociationSet>
+    <AssociationSet Name="ACCIDENTE_USUARIO_FK" Association="Self.ACCIDENTE_USUARIO_FK">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="ACCIDENTE" EntitySet="ACCIDENTE" />
+    </AssociationSet>
+    <AssociationSet Name="ASESORIA_MOTIVO_ASESORIA_FK" Association="Self.ASESORIA_MOTIVO_ASESORIA_FK">
+      <End Role="MOTIVO_ASESORIA" EntitySet="MOTIVO_ASESORIA" />
+      <End Role="ASESORIA" EntitySet="ASESORIA" />
+    </AssociationSet>
+    <AssociationSet Name="ASESORIA_SERVICIO_FK" Association="Self.ASESORIA_SERVICIO_FK">
+      <End Role="SERVICIO" EntitySet="SERVICIO" />
+      <End Role="ASESORIA" EntitySet="ASESORIA" />
+    </AssociationSet>
+    <AssociationSet Name="ASESORIA_USUARIO_FK" Association="Self.ASESORIA_USUARIO_FK">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="ASESORIA" EntitySet="ASESORIA" />
+    </AssociationSet>
+    <AssociationSet Name="CAPACITACION_SERVICIO_FK" Association="Self.CAPACITACION_SERVICIO_FK">
+      <End Role="SERVICIO" EntitySet="SERVICIO" />
+      <End Role="CAPACITACION" EntitySet="CAPACITACION" />
+    </AssociationSet>
+    <AssociationSet Name="CAPACITACION_USUARIO_FK" Association="Self.CAPACITACION_USUARIO_FK">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="CAPACITACION" EntitySet="CAPACITACION" />
+    </AssociationSet>
+    <AssociationSet Name="CHEQUEO_CLIENTE_EMPRESA_FK" Association="Self.CHEQUEO_CLIENTE_EMPRESA_FK">
+      <End Role="CLIENTE_EMPRESA" EntitySet="CLIENTE_EMPRESA" />
+      <End Role="CHEQUEO" EntitySet="CHEQUEO" />
+    </AssociationSet>
+    <AssociationSet Name="CHEQUEO_VISITA_FK" Association="Self.CHEQUEO_VISITA_FK">
+      <End Role="VISITA" EntitySet="VISITA" />
+      <End Role="CHEQUEO" EntitySet="CHEQUEO" />
+    </AssociationSet>
+    <AssociationSet Name="CIUDAD_REGION_FK" Association="Self.CIUDAD_REGION_FK">
+      <End Role="REGION" EntitySet="REGION" />
+      <End Role="CIUDAD" EntitySet="CIUDAD" />
+    </AssociationSet>
+    <AssociationSet Name="COMUNA_CIUDAD_FK" Association="Self.COMUNA_CIUDAD_FK">
+      <End Role="CIUDAD" EntitySet="CIUDAD" />
+      <End Role="COMUNA" EntitySet="COMUNA" />
+    </AssociationSet>
+    <AssociationSet Name="CLIENTE_EMPRESA_COMUNA_FK" Association="Self.CLIENTE_EMPRESA_COMUNA_FK">
+      <End Role="COMUNA" EntitySet="COMUNA" />
+      <End Role="CLIENTE_EMPRESA" EntitySet="CLIENTE_EMPRESA" />
+    </AssociationSet>
+    <AssociationSet Name="CLIENTE_EMPRESA_GIRO_FK" Association="Self.CLIENTE_EMPRESA_GIRO_FK">
+      <End Role="GIRO" EntitySet="GIRO" />
+      <End Role="CLIENTE_EMPRESA" EntitySet="CLIENTE_EMPRESA" />
+    </AssociationSet>
+    <AssociationSet Name="FACTURA_CLIENTE_EMPRESA_FK" Association="Self.FACTURA_CLIENTE_EMPRESA_FK">
+      <End Role="CLIENTE_EMPRESA" EntitySet="CLIENTE_EMPRESA" />
+      <End Role="FACTURA" EntitySet="FACTURA" />
+    </AssociationSet>
+    <AssociationSet Name="SERVICIO_CLIENTE_EMPRESA_FK" Association="Self.SERVICIO_CLIENTE_EMPRESA_FK">
+      <End Role="CLIENTE_EMPRESA" EntitySet="CLIENTE_EMPRESA" />
+      <End Role="SERVICIO" EntitySet="SERVICIO" />
+    </AssociationSet>
+    <AssociationSet Name="DETALLE_FACTURA_FACTURA_FK" Association="Self.DETALLE_FACTURA_FACTURA_FK">
+      <End Role="FACTURA" EntitySet="FACTURA" />
+      <End Role="DETALLE_FACTURA" EntitySet="DETALLE_FACTURA" />
+    </AssociationSet>
+    <AssociationSet Name="FACTURA_PAGO_FK" Association="Self.FACTURA_PAGO_FK">
+      <End Role="PAGO" EntitySet="PAGO" />
+      <End Role="FACTURA" EntitySet="FACTURA" />
+    </AssociationSet>
+    <AssociationSet Name="FACTURA_SERVICIO_FK" Association="Self.FACTURA_SERVICIO_FK">
+      <End Role="SERVICIO" EntitySet="SERVICIO" />
+      <End Role="FACTURA" EntitySet="FACTURA" />
+    </AssociationSet>
+    <AssociationSet Name="LLAMADO_SERVICIO_FK" Association="Self.LLAMADO_SERVICIO_FK">
+      <End Role="SERVICIO" EntitySet="SERVICIO" />
+      <End Role="LLAMADO" EntitySet="LLAMADO" />
+    </AssociationSet>
+    <AssociationSet Name="LLAMADO_USUARIO_FK" Association="Self.LLAMADO_USUARIO_FK">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="LLAMADO" EntitySet="LLAMADO" />
+    </AssociationSet>
+    <AssociationSet Name="MULTA_SERVICIO_FK" Association="Self.MULTA_SERVICIO_FK">
+      <End Role="SERVICIO" EntitySet="SERVICIO" />
+      <End Role="MULTA" EntitySet="MULTA" />
+    </AssociationSet>
+    <AssociationSet Name="MULTA_USUARIO_FK" Association="Self.MULTA_USUARIO_FK">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="MULTA" EntitySet="MULTA" />
+    </AssociationSet>
+    <AssociationSet Name="SERVICIO_PLAN_PAGO_FK" Association="Self.SERVICIO_PLAN_PAGO_FK">
+      <End Role="PLAN_PAGO" EntitySet="PLAN_PAGO" />
+      <End Role="SERVICIO" EntitySet="SERVICIO" />
+    </AssociationSet>
+    <AssociationSet Name="SOLICITUD_SERVICIO_FK" Association="Self.SOLICITUD_SERVICIO_FK">
+      <End Role="SERVICIO" EntitySet="SERVICIO" />
+      <End Role="SOLICITUD" EntitySet="SOLICITUD" />
+    </AssociationSet>
+    <AssociationSet Name="VISITA_SERVICIO_FK" Association="Self.VISITA_SERVICIO_FK">
+      <End Role="SERVICIO" EntitySet="SERVICIO" />
+      <End Role="VISITA" EntitySet="VISITA" />
+    </AssociationSet>
+    <AssociationSet Name="SOLICITUD_TIPO_SOLICITUD_FK" Association="Self.SOLICITUD_TIPO_SOLICITUD_FK">
+      <End Role="TIPO_SOLICITUD" EntitySet="TIPO_SOLICITUD" />
+      <End Role="SOLICITUD" EntitySet="SOLICITUD" />
+    </AssociationSet>
+    <AssociationSet Name="SOLICITUD_USUARIO_FK" Association="Self.SOLICITUD_USUARIO_FK">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="SOLICITUD" EntitySet="SOLICITUD" />
+    </AssociationSet>
+    <AssociationSet Name="USUARIO_TIPO_USUARIO_FK" Association="Self.USUARIO_TIPO_USUARIO_FK">
+      <End Role="TIPO_USUARIO" EntitySet="TIPO_USUARIO" />
+      <End Role="USUARIO" EntitySet="USUARIO" />
+    </AssociationSet>
+    <AssociationSet Name="VISITA_USUARIO_FK" Association="Self.VISITA_USUARIO_FK">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="VISITA" EntitySet="VISITA" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
