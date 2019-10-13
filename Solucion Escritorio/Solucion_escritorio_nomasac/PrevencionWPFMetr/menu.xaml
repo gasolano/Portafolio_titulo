@@ -1,0 +1,90 @@
+﻿<Controls:MetroWindow x:Class="PrevencionWPFMetr.menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrevencionWPFMetr"
+        mc:Ignorable="d"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="      No Mas Accidentes" Height="555" Width="1024" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+
+
+        <Controls:Tile Margin="34,34,772,223" Height="Auto" Width="Auto" Title="Usuarios" TitleFontSize="17" Click="usuarios_Click" Opacity="0.95">
+
+            <Controls:Tile.Effect>
+                <DropShadowEffect/>
+            </Controls:Tile.Effect>
+            <Image x:Name="image" Height="156" Width="118" Source="imagenes/UsuariosMenu.png"/>
+        </Controls:Tile>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="32" Margin="0,-32,0,0" VerticalAlignment="Top" Width="34" Source="imagenes/Guard.png"/>
+        <Controls:Tile Margin="34,319,772,17" Height="Auto" Width="Auto" Title="Clientes" TitleFontSize="17" Click="Tile_Click" Opacity="0.95">
+
+            <Controls:Tile.Effect>
+                <DropShadowEffect/>
+            </Controls:Tile.Effect>
+            <Image x:Name="image2" Height="156" Width="118" Source="imagenes/Office.png"/>
+        </Controls:Tile>
+        <Controls:Tile Margin="484,319,106,17" Height="Auto" Width="Auto" Title="Llamadas" TitleFontSize="17" Click="Tile_Click" Opacity="0.95">
+
+            <Controls:Tile.Effect>
+                <DropShadowEffect/>
+            </Controls:Tile.Effect>
+            <Image x:Name="image3" Height="164" Width="130" Source="imagenes/llamadas.png"/>
+        </Controls:Tile>
+        <Controls:Tile Margin="269,34,557,17" Height="Auto" Width="Auto" Title="Actividades" TitleFontSize="17" Click="Tile_Click" Opacity="0.95">
+
+            <Controls:Tile.Effect>
+                <DropShadowEffect/>
+            </Controls:Tile.Effect>
+            <Image x:Name="image4" Height="168" Width="127" Source="imagenes/actividades.png"/>
+        </Controls:Tile>
+        <Controls:Tile Margin="484,38,326,223" Height="Auto" Width="Auto" Title="Reportes" TitleFontSize="17" Click="Tile_Click" Opacity="0.95">
+
+            <Controls:Tile.Effect>
+                <DropShadowEffect/>
+            </Controls:Tile.Effect>
+            <Image x:Name="image5" Height="106" Width="116" Source="imagenes/reportes.png"/>
+        </Controls:Tile>
+        <Controls:Tile Margin="709,173,106,223" Height="Auto" Width="Auto" Title="Facturas" TitleFontSize="17" Click="Tile_Click">
+
+            <Controls:Tile.Effect>
+                <DropShadowEffect/>
+            </Controls:Tile.Effect>
+            <Image x:Name="image6" Height="103" Width="90" Source="imagenes/Factura.png"/>
+        </Controls:Tile>
+        <Controls:Tile Margin="709,34,106,362" Height="Auto" Width="Auto" Title="Pagos" TitleFontSize="17" Click="Tile_Click">
+
+            <Controls:Tile.Effect>
+                <DropShadowEffect/>
+            </Controls:Tile.Effect>
+            <Image x:Name="image7" Height="99" Width="109" Source="imagenes/pagos.png"/>
+        </Controls:Tile>
+        <Controls:Tile Margin="937,370,10,88" Height="Auto" Width="Auto" Title="" TitleFontSize="15" Click="Tile_Click" RenderTransformOrigin="0.565,0.146" Foreground="White" Background="{x:Null}">
+
+            <Controls:Tile.Effect>
+                <DropShadowEffect/>
+            </Controls:Tile.Effect>
+            <Image x:Name="image8" Height="51" Width="59" Source="imagenes/config.png" RenderTransformOrigin="0.477,-3.000" VerticalAlignment="Top"/>
+        </Controls:Tile>
+        <Controls:Tile Margin="937,441,10,17" Height="Auto" Width="Auto" Title="" TitleFontSize="15" Click="Salir_Click" RenderTransformOrigin="0.565,0.146" Background="{x:Null}">
+
+            <Controls:Tile.Effect>
+                <DropShadowEffect/>
+            </Controls:Tile.Effect>
+            <Image x:Name="image9" Height="51" Width="69" Source="imagenes/exit.png" RenderTransformOrigin="0.477,-3.000" VerticalAlignment="Top"/>
+        </Controls:Tile>
+
+        <Controls:Flyout x:Name="flyPerfil" Background="#FF003988" Opacity="0.9" Position="Right" Width="294" Margin="0,0,0,10">
+            <Grid>
+                <Image x:Name="image10" HorizontalAlignment="Left" Height="133" Margin="82,10,0,0" VerticalAlignment="Top" Width="130" Source="imagenes/Perfil.png"/>
+                <Label x:Name="lblTipo" Content="Label" HorizontalAlignment="Left" Margin="34,188,0,0" VerticalAlignment="Top" Width="238" Foreground="White"  FontSize="19" FontFamily="Corbel"/>
+
+            </Grid>
+        </Controls:Flyout>
+
+    </Grid>
+</Controls:MetroWindow>

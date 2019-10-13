@@ -31,7 +31,9 @@ namespace PrevencionRiesgos.Negocio
                 u.Correo = item.CORREO;
                 u.Telefono = item.TELEFONO;
                 u.Direccion = item.DIRECCION;
-                u.RutEmpresa = item.RUT;
+                u.RutEmpresa = item.RUT_EMPRESA;
+                //u.Tipo_Usuario = CommonBC.Modelo.TIPO_USUARIO.First(tp => tp.ID_TIPO == item.ID_TIPO).NOMBRE;
+                //u.Empresa = CommonBC.Modelo.CLIENTE_EMPRESA.First(ce => ce.RUT == item.RUT_EMPRESA).NOMBRE;
                 if (item.MOROSO == 1)
                 {
                     u.Moroso = true;
@@ -54,5 +56,24 @@ namespace PrevencionRiesgos.Negocio
         {
             return CommonBC.Serializar<List<Usuario>>(this.ReadAll());
         }
+
+
+        public List<IDGUsuario> ListaDesplegable(List<Usuario> lu)
+        {
+            return lu.Select(u => (IDGUsuario)u).ToList<IDGUsuario>();
+
+
+
+
+
+
+
+        }
+
+        public string SerializarDesplegable()
+        {
+            return CommonBC.Serializar<List<IDGUsuario>>(ListaDesplegable(this.ReadAll()).ToList<IDGUsuario>());
+        }
+
     }
 }

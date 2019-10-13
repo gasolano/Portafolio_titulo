@@ -8,34 +8,40 @@ namespace PrevencionRiesgos.Negocio
 {
     public class EmpresasCollection
     {
-        public List<TipoUsuario> ReadAll()
+        public List<ClienteEmpresa> ReadAll()
         {
-            return GenerarListado(CommonBC.Modelo.TIPO_USUARIO.ToList());
+            return GenerarListado(CommonBC.Modelo.CLIENTE_EMPRESA.ToList());
         }
 
-        private List<TipoUsuario> GenerarListado(List<DALC.TIPO_USUARIO> list)
+        private List<ClienteEmpresa> GenerarListado(List<DALC.CLIENTE_EMPRESA> list)
         {
 
-            List<TipoUsuario> ltu = new List<TipoUsuario>();
-            TipoUsuario t;
-            foreach (DALC.TIPO_USUARIO item in list)
+            List<ClienteEmpresa> lce = new List<ClienteEmpresa>();
+            ClienteEmpresa c;
+            foreach (DALC.CLIENTE_EMPRESA item in list)
             {
-                t = new TipoUsuario();
-                t.IdTipo = (int)item.ID_TIPO;
-                t.Nombre = item.NOMBRE;
-                ltu.Add(t);
+                c = new ClienteEmpresa();
+                c.Rut = item.RUT;
+                c.IdGiro = item.ID_GIRO;
+                c.IdComuna = item.ID_COMUNA;
+                c.Nombre = item.NOMBRE;
+                c.Telefono = item.TELEFONO;
+                c.Direccion = item.DIRECCION;
+                c.Correo = item.CORREO;
+                c.ClienteMoroso = item.CLIENTE_MOROSO;
+                lce.Add(c);
             }
-            return ltu;
+            return lce;
         }
 
-        public static List<TipoUsuario> Deserializar(string xml)
+        public static List<ClienteEmpresa> Deserializar(string xml)
         {
-            return (List<TipoUsuario>)CommonBC.Deserializar<List<TipoUsuario>>(xml);
+            return (List<ClienteEmpresa>)CommonBC.Deserializar<List<ClienteEmpresa>>(xml);
         }
 
         public string Serializar()
         {
-            return CommonBC.Serializar<List<TipoUsuario>>(this.ReadAll());
+            return CommonBC.Serializar<List<ClienteEmpresa>>(this.ReadAll());
         }
     }
 }

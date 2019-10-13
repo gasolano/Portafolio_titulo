@@ -17,7 +17,6 @@ using PrevencionRiesgosWPF;
 using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
 using MahApps.Metro.Behaviours;
-using PrevencionRiesgosWPF.Util;
 
 namespace PrevencionRiesgosWPF
 {
@@ -26,11 +25,11 @@ namespace PrevencionRiesgosWPF
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
-        Usuario U1 = UtilUsuarios.ULogueado;
+        Usuario U1 = new Usuario().ULogueado;
         
         public MainWindow()
         {
-            UtilUsuarios.HLogin = DateTime.Now;
+            new Usuario().HLogin = DateTime.Now;
             InitializeComponent();
             lblUsuario.Content = string.Format("{0} {1}",U1.Nombres,U1.ApellidoP);
             AgregarPagina(new Inicio());

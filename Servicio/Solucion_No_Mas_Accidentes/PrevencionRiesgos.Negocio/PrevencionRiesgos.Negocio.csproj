@@ -47,8 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommonBC.cs" />
+    <Compile Include="ClienteEmpresa.cs" />
     <Compile Include="EmpresasCollection.cs" />
     <Compile Include="ICrud.cs" />
+    <Compile Include="IDGUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TipoUsuario.cs" />
     <Compile Include="TipoUsuarioCollection.cs" />

@@ -83,7 +83,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Util\UtilUsuarios.cs" />
     <Compile Include="VerUsuario.xaml.cs">
       <DependentUpon>VerUsuario.xaml</DependentUpon>
     </Compile>

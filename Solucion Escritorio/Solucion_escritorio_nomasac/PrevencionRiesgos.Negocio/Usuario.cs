@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrevencionRiesgos.Negocio
 {
-    public class Usuario
+    public class Usuario: IDGUsuario
     {
         public string Rut { get; set; }
         public int IdTipo { get; set; }
@@ -20,7 +20,78 @@ namespace PrevencionRiesgos.Negocio
         public bool Moroso { get; set; }
         public bool DarBaja { get; set; }
         public string RutEmpresa { get; set; }
+        public string Tipo_Usuario { get; set; }
+        public string Empresa { get; set; }
 
+
+        private static Usuario _ULogueado;
+
+        public Usuario ULogueado
+        {
+            get { return _ULogueado; }
+            set { _ULogueado = value; }
+        }
+
+        private static Usuario _UVisualizar;
+
+        public Usuario UVisualizar
+        {
+            get { return _UVisualizar; }
+            set { _UVisualizar = value; }
+        }
+
+        private static DateTime _HLogin;
+
+        public DateTime HLogin
+        {
+            get { return _HLogin; }
+            set { _HLogin = value; }
+        }
+
+      
+        public string Apellidos
+        {
+            get
+            {
+                return string.Format("{0} {1}", ApellidoP, ApellidoM);
+            }
+        }
+
+        public string CMoroso
+        {
+            get
+            {
+                if (Moroso)
+                {
+                    return "Si";
+                }
+                else
+                {
+                    return "No";
+                }
+            }
+        }
+
+        public string De_Baja
+        {
+            get
+            {
+                if (DarBaja)
+                {
+                    return "Si";
+                }
+                else
+                {
+                    return "No";
+                }
+            }
+        }
+
+ 
+
+      
+
+   
 
         public Usuario()
         {
@@ -41,6 +112,7 @@ namespace PrevencionRiesgos.Negocio
             Moroso = false;
             DarBaja = false;
             RutEmpresa = string.Empty;
+         
         }
 
         public static Usuario Deserializar(string xml)

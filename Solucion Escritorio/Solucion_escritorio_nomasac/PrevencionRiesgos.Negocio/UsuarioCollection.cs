@@ -13,6 +13,14 @@ namespace PrevencionRiesgos.Negocio
         {
             return (List<Usuario>)CommonBC.Deserializar<List<Usuario>>(xml);
         }
+        public static List<IDGUsuario> DeserializarDesplegable(string xml)
+        {
+            return (List<IDGUsuario>)CommonBC.Deserializar<List<IDGUsuario>>(xml);
+        }
 
+        public List<IDGUsuario> ListaDesplegable(List<Usuario> lu)
+        {
+            return lu.Select(u => (IDGUsuario)u).ToList<IDGUsuario>();
+        }
     }
 }

@@ -1,0 +1,39 @@
+
+
+-- Precarga de datos
+
+INSERT INTO TIPO_USUARIO VALUES(1,'CLIENTE');
+INSERT INTO TIPO_USUARIO VALUES(2,'PROFESIONAL');
+INSERT INTO TIPO_USUARIO VALUES(3,'ADMINISTRADOR');
+
+INSERT INTO USUARIO VALUES ('19163223-0',3,'12345','BRYAN GONZALO','HENRIQUEZ','VALLADARES','bg.henriquez.95@gmail.com','+56962832566','Algarrobal #1913',0,0,'');
+INSERT INTO USUARIO VALUES ('11111111-1',1,'12345','REINALDO LUIS','VARGAS','MADRID','rv.vargas@gmail.com','+56962832588','Algarrobal #1957',0,0,'');
+commit;
+
+select *  from usuario;
+select * from tipo_usuario;
+
+
+--2
+
+select * from region;
+
+insert into region values(13,'REGION METROPOLITANA');
+insert into ciudad values(1,'SANTIAGO',13);
+Insert into comuna values(1,1,'CONCHALI');
+
+select * from ciudad;
+SELECT * FROM CIUDAD;
+SELECT * FROM COMUNA;
+SELECT * FROM GIRO;
+
+SELECT * FROM CLIENTE_EMPRESA;
+
+INSERT INTO GIRO VALUES(1,'INDUSTRIAL');
+
+Insert into CLIENTE_EMPRESA values('12456378-9',1,1,'CAUCHOS S.A','226244949','EL CORTIJO #566','CAUCHOS@GMAIL.COM',0);
+
+
+SELECT * FROM USUARIO;
+
+COMMIT;

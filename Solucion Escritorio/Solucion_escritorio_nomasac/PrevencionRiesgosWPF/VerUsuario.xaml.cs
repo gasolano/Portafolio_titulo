@@ -15,7 +15,6 @@ using PrevencionRiesgos.Negocio;
 using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
 using MahApps.Metro.Behaviours;
-using PrevencionRiesgosWPF.Util;
 
 namespace PrevencionRiesgosWPF
 {
@@ -25,8 +24,8 @@ namespace PrevencionRiesgosWPF
     public partial class VerUsuario
     {
 
-        Usuario uv = UtilUsuarios.UVisualizar;
-        Usuario U1 = UtilUsuarios.ULogueado;
+        Usuario uv = new Usuario().UVisualizar;
+        Usuario U1 = new Usuario().ULogueado;
 
         public VerUsuario()
         {

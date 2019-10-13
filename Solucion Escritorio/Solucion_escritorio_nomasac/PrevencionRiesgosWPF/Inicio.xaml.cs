@@ -13,7 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using PrevencionRiesgos.Negocio;
-using PrevencionRiesgosWPF.Util;
 
 namespace PrevencionRiesgosWPF
 {
@@ -23,14 +22,14 @@ namespace PrevencionRiesgosWPF
     public partial class Inicio : UserControl
     {
 
-        Usuario U1 = UtilUsuarios.ULogueado;
+        Usuario U1 = new Usuario().ULogueado;
 
         public Inicio()
         {
             InitializeComponent();
             lblBienvenida.Content = string.Format("BIENVENIDO A NO MAS ACCIDENTES");
             lblInfo.Content = string.Format("Sistema de prevencion de riesgos");
-            lblHora.Content = string.Format("Inicio Sesion {0}", UtilUsuarios.HLogin);
+            lblHora.Content = string.Format("Inicio Sesion {0}", new Usuario().HLogin);
             
         }
     }

@@ -51,8 +51,10 @@
             <Separator/>
             <Separator/>
             <Separator/>
-           
-           
+
+            <Separator/>
+            <Separator/>
+            
             <Label x:Name="lblUsuario" Content="dfd" RenderTransformOrigin="0.391,-0.259" Height="27" Width="232"/>
 
             <Separator/>

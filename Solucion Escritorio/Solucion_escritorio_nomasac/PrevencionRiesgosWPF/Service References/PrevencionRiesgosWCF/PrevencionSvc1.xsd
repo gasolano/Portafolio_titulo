@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CreateUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateUsuarioResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="ValidarUsuario">
     <xs:complexType>
       <xs:sequence>
@@ -55,6 +69,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="ReadClienteEmpresa">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReadClienteEmpresaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReadClienteEmpresaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="ReadUsuariosCollection">
     <xs:complexType>
       <xs:sequence />
@@ -67,17 +93,15 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="CrearUsuario">
+  <xs:element name="ReadUsuariosDesplegar">
     <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="xml" nillable="true" type="xs:string" />
-      </xs:sequence>
+      <xs:sequence />
     </xs:complexType>
   </xs:element>
-  <xs:element name="CrearUsuarioResponse">
+  <xs:element name="ReadUsuariosDesplegarResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="CrearUsuarioResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="ReadUsuariosDesplegarResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

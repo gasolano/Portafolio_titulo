@@ -1,0 +1,149 @@
+﻿<Controls:MetroWindow x:Class="PrevencionWPFMetr.UsuariosWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrevencionWPFMetr"
+        mc:Ignorable="d"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="      No Mas Accidentes - Usuarios" Height="555" Width="1024">
+
+    <Grid>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="30" Margin="0,-30,0,0" VerticalAlignment="Top" Width="36" RenderTransformOrigin="4.174,2.192" Source="imagenes/Guard.png" Grid.ColumnSpan="2"/>
+
+        <Controls:MetroTabControl Name="TCMain">
+
+            <Controls:MetroTabItem Header="Registro Usuarios">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="179*"/>
+                        <ColumnDefinition Width="75*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="label2" FontSize="23" Content="Formulario de registro" HorizontalAlignment="Left" Margin="44,10,0,0" VerticalAlignment="Top" Height="42" Width="254"/>
+                    <Label x:Name="label2_Copy2" FontSize="15" Content="Tipo Usuario" HorizontalAlignment="Left" Margin="93,128,0,0" VerticalAlignment="Top" Height="34" Width="118" Grid.Column="1"/>
+                    <ComboBox x:Name="cbTipAgr" Controls:TextBoxHelper.Watermark="" HorizontalAlignment="Left" Margin="434,121,0,0" VerticalAlignment="Top" Width="370" Height="41" Grid.ColumnSpan="2" SelectionChanged="cbTipAgr_SelectionChanged"/>
+                    <TextBox x:Name="txtNombre" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingrese nombres" FontSize="20" HorizontalAlignment="Left" Height="41" Margin="24,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370"/>
+                    <TextBox x:Name="txtAplPat" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingrese apellido paterno" FontSize="20" HorizontalAlignment="Left" Height="41" Margin="24,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370"/>
+                    <TextBox x:Name="txtAplMat" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingrese apellido materno" FontSize="20" HorizontalAlignment="Left" Height="41" Margin="24,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370"/>
+                    <TextBox x:Name="txtCorreo" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingrese correo electronico" FontSize="20" HorizontalAlignment="Left" Height="41" Margin="24,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370"/>
+                    <TextBox x:Name="txtDireccion" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingrese direccion" FontSize="20" HorizontalAlignment="Left" Height="41" Margin="24,305,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370"/>
+                    <TextBox x:Name="txtTelefono" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingrese telefono" FontSize="20" HorizontalAlignment="Left" Height="41" Margin="24,351,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370"/>
+                    <TextBox x:Name="txtPass" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingrese password de la cuenta" FontSize="20" HorizontalAlignment="Left" Height="41" Margin="24,397,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370"/>
+                    <ComboBox x:Name="cbEmp" Controls:TextBoxHelper.Watermark="" HorizontalAlignment="Left" Margin="434,167,0,0" VerticalAlignment="Top" Width="370" Height="41" Grid.ColumnSpan="2" IsEnabled="False"/>
+                    <TextBox x:Name="txtRut" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Ingrese rut" FontSize="20" HorizontalAlignment="Left" Height="41" Margin="24,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370"/>
+                    <Label x:Name="label2_Copy" FontSize="15" Content="Rut empresa (solo clientes)" HorizontalAlignment="Left" Margin="93,174,0,0" VerticalAlignment="Top" Height="34" Width="197" Grid.Column="1"/>
+
+                    <Controls:Tile TitleFontSize="17" Margin="648,330,279,68" Height="Auto" Width="Auto" Click="Tile_Click" Grid.ColumnSpan="2" Background="#CCFFAC1B" Opacity="0.97">
+                        <Controls:Tile.Effect>
+                            <DropShadowEffect ShadowDepth="9"/>
+                        </Controls:Tile.Effect>
+                        <Image x:Name="image1" Height="48" Width="54" Source="imagenes/Save.png"/>
+
+                    </Controls:Tile>
+                    <TextBox x:Name="txtPass2" Controls:TextBoxHelper.ClearTextButton="true" Controls:TextBoxHelper.Watermark="Confirme password de la cuenta" FontSize="20" HorizontalAlignment="Left" Height="41" Margin="434,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370" Grid.ColumnSpan="2"/>
+
+
+
+                </Grid>
+
+            </Controls:MetroTabItem>
+
+
+
+            <Controls:MetroTabItem Header="Visualizar usuarios" ContextMenuOpening="MetroTabItem_ContextMenuOpening" IsEnabledChanged="MetroTabItem_IsEnabledChanged" >
+
+
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="34*"/>
+                        <ColumnDefinition Width="143*"/>
+                        <ColumnDefinition Width="331*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <DataGrid x:Name="dgUsuarios" HorizontalAlignment="Left" Margin="40,126,0,0" VerticalAlignment="Top" Height="226" Width="748" Grid.Column="1" Grid.ColumnSpan="2"/>
+
+                    <Controls:Tile Margin="82,381,112,49" Grid.Column="1" Height="Auto" Width="Auto" Click="Tile_Click_2">
+                        <Controls:Tile.Effect>
+                            <DropShadowEffect ShadowDepth="9" BlurRadius="7"/>
+                        </Controls:Tile.Effect>
+                        <Image x:Name="image2" Height="55" Width="86" Source="imagenes/View.png" Opacity="0.97"/>
+
+                    </Controls:Tile>
+                    <TextBox x:Name="textBox1" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Ingrese rut a buscar" FontSize="20" Grid.Column="1" HorizontalAlignment="Left" Height="38" Margin="40,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258" Grid.ColumnSpan="2"/>
+                    <Button x:Name="button" Content="Buscar" Grid.Column="2" HorizontalAlignment="Left" Margin="30,83,0,0" VerticalAlignment="Top" Width="84" Height="35"/>
+                    <ComboBox x:Name="cbTipBusc" Grid.Column="2" HorizontalAlignment="Left" Margin="139,80,0,0" VerticalAlignment="Top" Width="268" Height="38"/>
+                    <Button x:Name="button_Copy" Content="Buscar" Grid.Column="2" HorizontalAlignment="Left" Margin="418,83,0,0" VerticalAlignment="Top" Width="84" Height="35" Click="button_Copy_Click"/>
+                    <Controls:Tile Margin="32,381,230,49" Height="Auto" Width="Auto" Click="Tile_Click_1" Grid.ColumnSpan="2" Opacity="0.97">
+                        <Controls:Tile.Effect>
+                            <DropShadowEffect ShadowDepth="9" BlurRadius="7"/>
+                        </Controls:Tile.Effect>
+                        <Image x:Name="image3" Height="45" Width="74" Source="imagenes/Command-Refresh.png"/>
+
+                    </Controls:Tile>
+
+
+                    <Controls:Flyout x:Name="flyout" Width="432" Background="#FF003988" Opacity="0.9" Position="Right" Grid.Column="2">
+                        <Grid>
+                            <Image x:Name="image4" HorizontalAlignment="Left" Height="133" Margin="156,0,0,0" VerticalAlignment="Top" Width="136" Source="imagenes/verUser.png"/>
+                            <Label x:Name="lblRut" Content="Label" HorizontalAlignment="Left" Margin="34,140,0,0" VerticalAlignment="Top" Height="32" Width="388" Foreground="White" FontSize="19" FontFamily="Corbel"/>
+                            <Label x:Name="lblTelefono" Content="Label" HorizontalAlignment="Left" Margin="34,236,0,0" VerticalAlignment="Top" Height="32" Width="388" Foreground="White" FontSize="19" FontFamily="Corbel"/>
+                            <Label x:Name="lblTipo" Content="Label" HorizontalAlignment="Left" Margin="34,172,0,0" VerticalAlignment="Top" Height="32" Width="388" Foreground="White" FontSize="19" FontFamily="Corbel"/>
+                            <Label x:Name="lblCorreo" Content="Label" HorizontalAlignment="Left" Margin="34,204,0,0" VerticalAlignment="Top" Height="32" Width="388" Foreground="White" FontSize="19" FontFamily="Corbel"/>
+                            <Label x:Name="lblDeBaja" Content="Label" HorizontalAlignment="Left" Margin="34,332,0,0" VerticalAlignment="Top" Height="32" Width="388" Foreground="White" FontSize="19" FontFamily="Corbel"/>
+                            <Label x:Name="lblMoroso" Content="Label" HorizontalAlignment="Left" Margin="34,300,0,0" VerticalAlignment="Top" Height="32" Width="388" Foreground="White" FontSize="19" FontFamily="Corbel"/>
+                            <Label x:Name="lblDireccion" Content="Label" HorizontalAlignment="Left" Margin="34,268,0,0" VerticalAlignment="Top" Height="32" Width="388" Foreground="White" FontSize="19" FontFamily="Corbel"/>
+                            <Button x:Name="btnBaja" Content="Dar de baja" HorizontalAlignment="Left" Margin="209,373,0,0" Width="83" Background="#FFFBCD69" Foreground="White" Opacity="0.98" Height="27" VerticalAlignment="Top" Click="btnBaja_Click"/>
+                            <Button x:Name="btnModificar" Content="Actualizar" HorizontalAlignment="Left" Margin="297,373,0,0" Width="83" Background="#FFFBCD69" Foreground="White" Opacity="0.98" Click="btnModificar_Click" Height="27" VerticalAlignment="Top"/>
+
+
+                        </Grid>
+                    </Controls:Flyout>
+                    <Controls:Flyout x:Name="flModificar" Width="523" Background="#FFE4B000" Position="Right" Opacity="0.95" Grid.Column="2">
+
+                        <Grid >
+                            <Image x:Name="image4_Copy" HorizontalAlignment="Left" Height="133" Margin="210,-5,0,0" VerticalAlignment="Top" Width="136" Source="imagenes/verUser.png"/>
+                            <Label x:Name="lblRut_Copy" Content="Nombres" HorizontalAlignment="Left" Margin="22,136,0,0" VerticalAlignment="Top" Height="32" Width="104" Foreground="White" FontSize="19" FontFamily="Corbel"/>
+                            <Label x:Name="lblTelefono_Copy" Content="Direccion" HorizontalAlignment="Left" Margin="22,250,0,0" VerticalAlignment="Top" Height="32" Width="104" Foreground="White" FontSize="19" FontFamily="Corbel"/>
+                            <Label x:Name="lblTipo_Copy" Content="Apellido Pat" HorizontalAlignment="Left" Margin="22,173,0,0" VerticalAlignment="Top" Height="32" Width="114" Foreground="White" FontSize="19" FontFamily="Corbel"/>
+                            <Label x:Name="lblCorreo_Copy" Content="Apellido Mat" HorizontalAlignment="Left" Margin="22,210,0,0" VerticalAlignment="Top" Height="32" Width="109" Foreground="White" FontSize="19" FontFamily="Corbel"/>
+                            <Label x:Name="lblMoroso_Copy" Content="Correo" HorizontalAlignment="Left" Margin="22,329,0,0" VerticalAlignment="Top" Height="32" Width="104" Foreground="White" FontSize="19" FontFamily="Corbel"/>
+                            <Label x:Name="lblDireccion_Copy" Content="Telefono" HorizontalAlignment="Left" Margin="22,288,0,0" VerticalAlignment="Top" Height="32" Width="104" Foreground="White" FontSize="19" FontFamily="Corbel"/>
+                            <TextBox x:Name="txtMNombres" HorizontalAlignment="Left" Height="34" Margin="136,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302"/>
+                            <TextBox x:Name="txtMCorreo" HorizontalAlignment="Left" Height="34" Margin="136,327,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302"/>
+                            <TextBox x:Name="txtMTelefono" HorizontalAlignment="Left" Height="34" Margin="136,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302"/>
+                            <TextBox x:Name="txtMDireccion" HorizontalAlignment="Left" Height="34" Margin="136,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302"/>
+                            <TextBox x:Name="txtMApellidoM" HorizontalAlignment="Left" Height="34" Margin="136,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302"/>
+                            <TextBox x:Name="txtMApellidoP" HorizontalAlignment="Left" Height="34" Margin="136,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302"/>
+                            <Label x:Name="lblMoroso_Copy1" Content="Tipo Usuario" HorizontalAlignment="Left" Margin="22,368,0,0" VerticalAlignment="Top" Height="32" Width="116" Foreground="White" FontSize="19" FontFamily="Corbel"/>
+                            <Button x:Name="button1" HorizontalAlignment="Left" Margin="448,288,0,0" VerticalAlignment="Top" Width="65" Height="89" Background="{x:Null}" BorderThickness="0" Click="button1_Click">
+                                <Image x:Name="image5" Height="79" Width="55" Source="imagenes/Save.png"/>
+
+                            </Button>
+                            <ComboBox x:Name="cbMTipoUsuario" HorizontalAlignment="Left" Margin="136,368,0,0" VerticalAlignment="Top" Width="302" Height="32"/>
+
+
+                        </Grid>
+                    </Controls:Flyout>
+
+
+
+
+
+                </Grid>
+
+            </Controls:MetroTabItem>
+
+
+
+
+
+        </Controls:MetroTabControl>
+
+
+
+    </Grid>
+</Controls:MetroWindow>

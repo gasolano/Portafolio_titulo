@@ -16,7 +16,6 @@ using PrevencionRiesgosWPF;
 using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
 using MahApps.Metro.Behaviours;
-using PrevencionRiesgosWPF.Util;
 
 namespace PrevencionRiesgosWPF
 {
@@ -55,7 +54,7 @@ namespace PrevencionRiesgosWPF
                 string xml = proxy.ReadUsuario(u.Serializar());
                 proxy.Close();
                 u = Usuario.Deserializar(xml);
-                UtilUsuarios.ULogueado = u;
+                u.ULogueado = u;
             
                 if (u.IdTipo == 1 || u.IdTipo == 2)
                 {

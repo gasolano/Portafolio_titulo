@@ -15,6 +15,12 @@ namespace PrevencionRiesgosWPF.PrevencionRiesgosWCF {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="PrevencionRiesgosWCF.IPrevencion")]
     public interface IPrevencion {
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/CreateUsuario", ReplyAction="http://tempuri.org/IPrevencion/CreateUsuarioResponse")]
+        bool CreateUsuario(string xml);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/CreateUsuario", ReplyAction="http://tempuri.org/IPrevencion/CreateUsuarioResponse")]
+        System.Threading.Tasks.Task<bool> CreateUsuarioAsync(string xml);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/ValidarUsuario", ReplyAction="http://tempuri.org/IPrevencion/ValidarUsuarioResponse")]
         bool ValidarUsuario(string xml);
         
@@ -39,17 +45,23 @@ namespace PrevencionRiesgosWPF.PrevencionRiesgosWCF {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/ReadTipoUsuario", ReplyAction="http://tempuri.org/IPrevencion/ReadTipoUsuarioResponse")]
         System.Threading.Tasks.Task<string> ReadTipoUsuarioAsync();
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/ReadClienteEmpresa", ReplyAction="http://tempuri.org/IPrevencion/ReadClienteEmpresaResponse")]
+        string ReadClienteEmpresa();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/ReadClienteEmpresa", ReplyAction="http://tempuri.org/IPrevencion/ReadClienteEmpresaResponse")]
+        System.Threading.Tasks.Task<string> ReadClienteEmpresaAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/ReadUsuariosCollection", ReplyAction="http://tempuri.org/IPrevencion/ReadUsuariosCollectionResponse")]
         string ReadUsuariosCollection();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/ReadUsuariosCollection", ReplyAction="http://tempuri.org/IPrevencion/ReadUsuariosCollectionResponse")]
         System.Threading.Tasks.Task<string> ReadUsuariosCollectionAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/CrearUsuario", ReplyAction="http://tempuri.org/IPrevencion/CrearUsuarioResponse")]
-        bool CrearUsuario(string xml);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/ReadUsuariosDesplegar", ReplyAction="http://tempuri.org/IPrevencion/ReadUsuariosDesplegarResponse")]
+        string ReadUsuariosDesplegar();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/CrearUsuario", ReplyAction="http://tempuri.org/IPrevencion/CrearUsuarioResponse")]
-        System.Threading.Tasks.Task<bool> CrearUsuarioAsync(string xml);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/ReadUsuariosDesplegar", ReplyAction="http://tempuri.org/IPrevencion/ReadUsuariosDesplegarResponse")]
+        System.Threading.Tasks.Task<string> ReadUsuariosDesplegarAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -77,6 +89,14 @@ namespace PrevencionRiesgosWPF.PrevencionRiesgosWCF {
         
         public PrevencionClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        public bool CreateUsuario(string xml) {
+            return base.Channel.CreateUsuario(xml);
+        }
+        
+        public System.Threading.Tasks.Task<bool> CreateUsuarioAsync(string xml) {
+            return base.Channel.CreateUsuarioAsync(xml);
         }
         
         public bool ValidarUsuario(string xml) {
@@ -111,6 +131,14 @@ namespace PrevencionRiesgosWPF.PrevencionRiesgosWCF {
             return base.Channel.ReadTipoUsuarioAsync();
         }
         
+        public string ReadClienteEmpresa() {
+            return base.Channel.ReadClienteEmpresa();
+        }
+        
+        public System.Threading.Tasks.Task<string> ReadClienteEmpresaAsync() {
+            return base.Channel.ReadClienteEmpresaAsync();
+        }
+        
         public string ReadUsuariosCollection() {
             return base.Channel.ReadUsuariosCollection();
         }
@@ -119,12 +147,12 @@ namespace PrevencionRiesgosWPF.PrevencionRiesgosWCF {
             return base.Channel.ReadUsuariosCollectionAsync();
         }
         
-        public bool CrearUsuario(string xml) {
-            return base.Channel.CrearUsuario(xml);
+        public string ReadUsuariosDesplegar() {
+            return base.Channel.ReadUsuariosDesplegar();
         }
         
-        public System.Threading.Tasks.Task<bool> CrearUsuarioAsync(string xml) {
-            return base.Channel.CrearUsuarioAsync(xml);
+        public System.Threading.Tasks.Task<string> ReadUsuariosDesplegarAsync() {
+            return base.Channel.ReadUsuariosDesplegarAsync();
         }
     }
 }

@@ -40,8 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClienteEmpresa.cs" />
+    <Compile Include="ClienteEmpresaCollection.cs" />
     <Compile Include="CommonBC.cs" />
     <Compile Include="ICrud.cs" />
+    <Compile Include="IDGUsuario.cs" />
     <Compile Include="TipoUsuario.cs" />
     <Compile Include="TipoUsuarioCollection.cs" />
     <Compile Include="Usuario.cs" />

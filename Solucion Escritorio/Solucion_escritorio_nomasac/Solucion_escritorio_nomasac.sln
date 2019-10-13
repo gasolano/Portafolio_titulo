@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrevencionRiesgos.Negocio",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrevencionRiesgosWPF", "PrevencionRiesgosWPF\PrevencionRiesgosWPF.csproj", "{39EE7568-D951-4AE1-A423-6D2FFFC64D60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrevencionWPFMetr", "PrevencionWPFMetr\PrevencionWPFMetr.csproj", "{025AD7E6-8A20-4314-BF1D-2364C4CF7CF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{39EE7568-D951-4AE1-A423-6D2FFFC64D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39EE7568-D951-4AE1-A423-6D2FFFC64D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39EE7568-D951-4AE1-A423-6D2FFFC64D60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{025AD7E6-8A20-4314-BF1D-2364C4CF7CF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{025AD7E6-8A20-4314-BF1D-2364C4CF7CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{025AD7E6-8A20-4314-BF1D-2364C4CF7CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{025AD7E6-8A20-4314-BF1D-2364C4CF7CF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

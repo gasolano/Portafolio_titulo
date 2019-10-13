@@ -11,15 +11,15 @@ namespace PrevencionRiesgos.Negocio
 {
     public class CommonBC
     {
-        private static EntitiesPrevencionRiesgos _modelo;
+        private static PrevencionRiesgosEntities _modelo;
 
-        public static EntitiesPrevencionRiesgos Modelo
+        public static PrevencionRiesgosEntities Modelo
         {
             get
             {
                 if (_modelo == null)
                 {
-                    _modelo = new EntitiesPrevencionRiesgos();
+                    _modelo = new PrevencionRiesgosEntities();
                 }
                 return _modelo;
             }

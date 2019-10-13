@@ -26,7 +26,7 @@ namespace PrevencionRiesgos.DALC
         }
     
         public string RUT { get; set; }
-        public decimal ID_TIPO { get; set; }
+        public long ID_TIPO { get; set; }
         public string PASS { get; set; }
         public string NOMBRES { get; set; }
         public string APELLIDOP { get; set; }
@@ -34,8 +34,8 @@ namespace PrevencionRiesgos.DALC
         public string CORREO { get; set; }
         public string TELEFONO { get; set; }
         public string DIRECCION { get; set; }
-        public decimal MOROSO { get; set; }
-        public decimal DAR_BAJA { get; set; }
+        public long MOROSO { get; set; }
+        public long DAR_BAJA { get; set; }
         public string RUT_EMPRESA { get; set; }
     
         public virtual ICollection<ACCIDENTE> ACCIDENTE { get; set; }

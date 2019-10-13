@@ -17,7 +17,6 @@ using System.Net.Mail;
 using System.IO;
 
 using PrevencionRiesgos.Negocio;
-using PrevencionRiesgosWPF.Util;
 
 namespace PrevencionRiesgosWPF
 {
@@ -26,7 +25,7 @@ namespace PrevencionRiesgosWPF
     /// </summary>
     public partial class AdmUsuarios : UserControl
     {
-        Usuario U1 = UtilUsuarios.ULogueado;
+        Usuario U1 = new Usuario().ULogueado;
 
         public AdmUsuarios()
         {
@@ -81,7 +80,7 @@ namespace PrevencionRiesgosWPF
             PrevencionRiesgosWPF.PrevencionRiesgosWCF.PrevencionClient proxy = new PrevencionRiesgosWPF.PrevencionRiesgosWCF.PrevencionClient();
 
             List<TipoUsuario> lu = TipoUsuarioCollection.Deserializar(proxy.ReadTipoUsuario());
-
+            //List<ClienteEmpresa> lce = ClienteEmpresaCollection.Deserializar();
 
             proxy.Close();
 
@@ -102,24 +101,8 @@ namespace PrevencionRiesgosWPF
 
         private void btnRegistrar_Click(object sender, RoutedEventArgs e)
         {
-            PrevencionRiesgosWPF.PrevencionRiesgosWCF.PrevencionClient proxy = new PrevencionRiesgosWPF.PrevencionRiesgosWCF.PrevencionClient();
-
-            Usuario u = new Usuario()
-            {
-                Rut = txtRut.Text,
-                IdTipo = int.Parse(cbTipAgr.SelectedValue.ToString()),
-                Pass = txtPass.Text,
-                Nombres = txtNombre.Text,
-                ApellidoM = txtAplMat.Text,
-                ApellidoP = txtAplPat.Text,
-                Correo = txtCorreo.Text,
-                Telefono = txtTelefono.Text,
-                Direccion = txtDireccion.Text
-            };
-            string xml = u.Serializar();
-            bool valido = proxy.CrearUsuario(xml);
-            string mensaje = valido ? "Usuario creado" : "Usuario no creado";
-            MessageBox.Show(mensaje, "Alerta", MessageBoxButton.OK, MessageBoxImage.Warning);
+           
+      
         }
 
         private void CrearPDF()
@@ -149,7 +132,7 @@ namespace PrevencionRiesgosWPF
             Usuario u = (Usuario)dgUsuarios.SelectedItem;
             if (u != null)
             {
-                UtilUsuarios.UVisualizar = u;
+                u.UVisualizar = u;
                 VerUsuario vuw = new VerUsuario();
                 vuw.Show();
             }

@@ -10,15 +10,15 @@ C:\Users\bryan\Desktop\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin
 C:\Users\bryan\Desktop\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\obj\Debug\PrevencionRiesgos.Services.csprojResolveAssemblyReference.cache
 C:\Users\bryan\Desktop\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\obj\Debug\PrevencionRiesgos.Services.dll
 C:\Users\bryan\Desktop\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\obj\Debug\PrevencionRiesgos.Services.pdb
-C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin\PrevencionRiesgos.Services.dll.config
-C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin\PrevencionRiesgos.Services.dll
-C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin\PrevencionRiesgos.Services.pdb
-C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin\PrevencionRiesgos.Negocio.dll
-C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin\PrevencionRiesgos.DALC.dll
-C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin\EntityFramework.dll
-C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin\PrevencionRiesgos.Negocio.pdb
-C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin\PrevencionRiesgos.DALC.pdb
-C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin\EntityFramework.xml
-C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\obj\Debug\PrevencionRiesgos.Services.csprojResolveAssemblyReference.cache
-C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\obj\Debug\PrevencionRiesgos.Services.dll
-C:\Users\Miguel\Desktop\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\obj\Debug\PrevencionRiesgos.Services.pdb
+C:\Users\bryan\Desktop\Portafolio final\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin\PrevencionRiesgos.Services.dll.config
+C:\Users\bryan\Desktop\Portafolio final\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin\PrevencionRiesgos.Services.dll
+C:\Users\bryan\Desktop\Portafolio final\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin\PrevencionRiesgos.Services.pdb
+C:\Users\bryan\Desktop\Portafolio final\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin\PrevencionRiesgos.Negocio.dll
+C:\Users\bryan\Desktop\Portafolio final\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin\PrevencionRiesgos.DALC.dll
+C:\Users\bryan\Desktop\Portafolio final\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin\EntityFramework.dll
+C:\Users\bryan\Desktop\Portafolio final\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin\PrevencionRiesgos.Negocio.pdb
+C:\Users\bryan\Desktop\Portafolio final\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin\PrevencionRiesgos.DALC.pdb
+C:\Users\bryan\Desktop\Portafolio final\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\bin\EntityFramework.xml
+C:\Users\bryan\Desktop\Portafolio final\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\obj\Debug\PrevencionRiesgos.Services.csprojResolveAssemblyReference.cache
+C:\Users\bryan\Desktop\Portafolio final\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\obj\Debug\PrevencionRiesgos.Services.dll
+C:\Users\bryan\Desktop\Portafolio final\PORTAFOLITO DE TITULO_001D_EQ4 - Desarrollo - Nomasacc\Servicio\Solucion_No_Mas_Accidentes\PrevencionRiesgos.Services\obj\Debug\PrevencionRiesgos.Services.pdb

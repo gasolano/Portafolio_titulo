@@ -40,7 +40,6 @@
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,49 +49,49 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ACCIDENTE.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="ASESORIA.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="CAPACITACION.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="CHEQUEO.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="CIUDAD.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="CLIENTE_EMPRESA.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="COMUNA.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="DETALLE_FACTURA.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="FACTURA.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="GIRO.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="LLAMADO.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="MOTIVO_ASESORIA.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="MULTA.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="PAGO.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="PLAN_PAGO.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="PrevencionRiesgosEDM.Context.cs">
       <AutoGen>True</AutoGen>
@@ -109,42 +108,27 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PrevencionRiesgosEDM.edmx</DependentUpon>
     </Compile>
-    <Compile Include="PrevencionRiesgosEDM_XE.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PrevencionRiesgosEDM_XE.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="PrevencionRiesgosEDM_XE.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
-    </Compile>
-    <Compile Include="PrevencionRiesgosEDM_XE.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PrevencionRiesgosEDM_XE.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="REGION.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="SERVICIO.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="SOLICITUD.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="TIPO_SOLICITUD.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="TIPO_USUARIO.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="USUARIO.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="VISITA.cs">
-      <DependentUpon>PrevencionRiesgosEDM_XE.tt</DependentUpon>
+      <DependentUpon>PrevencionRiesgosEDM.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -155,17 +139,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="PrevencionRiesgosEDM.edmx.diagram">
       <DependentUpon>PrevencionRiesgosEDM.edmx</DependentUpon>
-    </None>
-    <EntityDeploy Include="PrevencionRiesgosEDM_XE.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>PrevencionRiesgosEDM_XE.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="PrevencionRiesgosEDM_XE.edmx.diagram">
-      <DependentUpon>PrevencionRiesgosEDM_XE.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -179,22 +155,9 @@
       <DependentUpon>PrevencionRiesgosEDM.edmx</DependentUpon>
       <LastGenOutput>PrevencionRiesgosEDM.cs</LastGenOutput>
     </Content>
-    <Content Include="PrevencionRiesgosEDM_XE.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>PrevencionRiesgosEDM_XE.edmx</DependentUpon>
-      <LastGenOutput>PrevencionRiesgosEDM_XE.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="PrevencionRiesgosEDM_XE.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>PrevencionRiesgosEDM_XE.edmx</DependentUpon>
-      <LastGenOutput>PrevencionRiesgosEDM_XE.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

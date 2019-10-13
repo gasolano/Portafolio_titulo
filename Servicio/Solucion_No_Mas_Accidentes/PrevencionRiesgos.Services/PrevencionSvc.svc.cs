@@ -13,6 +13,28 @@ namespace PrevencionRiesgos.Services
     // NOTE: para iniciar el Cliente de prueba WCF para probar este servicio, seleccione Service1.svc o Service1.svc.cs en el Explorador de soluciones e inicie la depuración.
     public class PrevencionSvc : IPrevencion
     {
+        public bool CreateUsuario(string xml)
+        {
+
+            try
+            {
+
+                Usuario u1 = Usuario.Deserializar(xml);
+                if (u1.Create())
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                return false;
+            }
+        }
 
         public string ReadUsuario(string xml)
         {
@@ -38,6 +60,7 @@ namespace PrevencionRiesgos.Services
         }
 
 
+
         public string ReadTipoUsuario()
         {
 
@@ -53,6 +76,41 @@ namespace PrevencionRiesgos.Services
                 return null;
             }
         }
+
+
+        public string ReadClienteEmpresa()
+        {
+
+            try
+            {
+
+                return new EmpresasCollection().Serializar();
+
+            }
+            catch (Exception ex)
+            {
+
+                return null;
+            }
+        }
+
+        public bool ModificarUsuario(string xml)
+        {
+
+            try
+            {
+
+                Usuario u1 = Usuario.Deserializar(xml);
+
+                return u1.Update();
+            }
+            catch (Exception ex)
+            {
+
+                return false;
+            }
+        }
+
 
         public string ReadUsuariosCollection()
         {
@@ -100,20 +158,20 @@ namespace PrevencionRiesgos.Services
 
         }
 
-        public bool CrearUsuario(string xml)
+        public string ReadUsuariosDesplegar()
         {
             try
             {
-                Usuario u = Usuario.Deserializar(xml);
-                return u.Create();
+
+                return new UsuarioCollection().SerializarDesplegable();
+
             }
             catch (Exception ex)
             {
-                return false;
+
+                return null;
             }
-
         }
-
     }
     
 }

@@ -14,7 +14,13 @@ namespace PrevencionRiesgos.Services
     {
 
         [OperationContract]
+        bool CreateUsuario(string xml);
+
+        [OperationContract]
         bool ValidarUsuario(string xml);
+
+        [OperationContract]
+        bool ModificarUsuario(string xml);
 
         [OperationContract]
         string ReadUsuario(string xml);
@@ -26,9 +32,13 @@ namespace PrevencionRiesgos.Services
         string ReadTipoUsuario();
 
         [OperationContract]
-        string ReadUsuariosCollection();
-        
+        string ReadClienteEmpresa();
+
         [OperationContract]
-        bool CrearUsuario(string xml);
+        string ReadUsuariosCollection();
+
+        [OperationContract]
+        string ReadUsuariosDesplegar();
+
     }
 }
