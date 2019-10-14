@@ -46,12 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ciudad.cs" />
     <Compile Include="CommonBC.cs" />
     <Compile Include="ClienteEmpresa.cs" />
+    <Compile Include="Comuna.cs" />
     <Compile Include="EmpresasCollection.cs" />
+    <Compile Include="Giro.cs" />
+    <Compile Include="GiroCollection.cs" />
     <Compile Include="ICrud.cs" />
     <Compile Include="IDGUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Region.cs" />
+    <Compile Include="RegionCollection.cs" />
     <Compile Include="TipoUsuario.cs" />
     <Compile Include="TipoUsuarioCollection.cs" />
     <Compile Include="Usuario.cs" />

@@ -4,58 +4,58 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="8689faf70432446f84ce1febb334dd36" Name="Diagram1" ZoomLevel="55">
-        <EntityTypeShape EntityType="Model.ACCIDENTE" Width="1.5" PointX="12" PointY="12.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.ASESORIA" Width="1.5" PointX="15" PointY="13.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.CAPACITACION" Width="1.5" PointX="15" PointY="9.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.CHEQUEO" Width="1.5" PointX="9.75" PointY="18.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.CIUDAD" Width="1.5" PointX="3" PointY="19.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.CLIENTE_EMPRESA" Width="1.5" PointX="7.5" PointY="18.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.COMUNA" Width="1.5" PointX="5.25" PointY="19.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.DETALLE_FACTURA" Width="1.5" PointX="15" PointY="19.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.FACTURA" Width="1.5" PointX="12.75" PointY="17.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.GIRO" Width="1.5" PointX="5.25" PointY="16.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.LLAMADO" Width="1.5" PointX="12" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.MOTIVO_ASESORIA" Width="1.5" PointX="12.75" PointY="5.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.MULTA" Width="1.5" PointX="18" PointY="13.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.PAGO" Width="1.5" PointX="10.5" PointY="23.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.PLAN_PAGO" Width="1.5" PointX="7.5" PointY="13.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.REGION" Width="1.5" PointX="0.75" PointY="19.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.SERVICIO" Width="1.5" PointX="9.75" PointY="12.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.SOLICITUD" Width="1.5" PointX="18" PointY="9.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.TIPO_SOLICITUD" Width="1.5" PointX="15.75" PointY="6.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.TIPO_USUARIO" Width="1.5" PointX="7.5" PointY="8.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.USUARIO" Width="1.5" PointX="9.75" PointY="7" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.VISITA" Width="1.5" PointX="18" PointY="17.875" IsExpanded="true" />
-        <AssociationConnector Association="Model.ACCIDENTE_SERVICIO_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.ACCIDENTE_USUARIO_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.ASESORIA_MOTIVO_ASESORIA_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.ASESORIA_SERVICIO_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.ASESORIA_USUARIO_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.CAPACITACION_SERVICIO_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.CAPACITACION_USUARIO_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.CHEQUEO_CLIENTE_EMPRESA_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.CHEQUEO_VISITA_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.CIUDAD_REGION_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.COMUNA_CIUDAD_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.CLIENTE_EMPRESA_COMUNA_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.CLIENTE_EMPRESA_GIRO_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.FACTURA_CLIENTE_EMPRESA_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.SERVICIO_CLIENTE_EMPRESA_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.DETALLE_FACTURA_FACTURA_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.FACTURA_PAGO_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.FACTURA_SERVICIO_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.LLAMADO_SERVICIO_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.LLAMADO_USUARIO_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.MULTA_SERVICIO_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.MULTA_USUARIO_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.SERVICIO_PLAN_PAGO_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.SOLICITUD_SERVICIO_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.VISITA_SERVICIO_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.SOLICITUD_TIPO_SOLICITUD_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.SOLICITUD_USUARIO_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.USUARIO_TIPO_USUARIO_FK" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.VISITA_USUARIO_FK" ManuallyRouted="false" />
+      <Diagram DiagramId="57a78f6b20284aa2bc3e86145ac9d581" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.ACCIDENTE" Width="1.5" PointX="12" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.ASESORIA" Width="1.5" PointX="15" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.CAPACITACION" Width="1.5" PointX="15" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.CHEQUEO" Width="1.5" PointX="9.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.CIUDAD" Width="1.5" PointX="3" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.CLIENTE_EMPRESA" Width="1.5" PointX="7.5" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.COMUNA" Width="1.5" PointX="5.25" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.DETALLE_FACTURA" Width="1.5" PointX="15" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.FACTURA" Width="1.5" PointX="12.75" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.GIRO" Width="1.5" PointX="5.25" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.LLAMADO" Width="1.5" PointX="12" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.MOTIVO_ASESORIA" Width="1.5" PointX="12.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.MULTA" Width="1.5" PointX="18" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.PAGO" Width="1.5" PointX="10.5" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.PLAN_PAGO" Width="1.5" PointX="7.5" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.REGION" Width="1.5" PointX="0.75" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.SERVICIO" Width="1.5" PointX="9.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.SOLICITUD" Width="1.5" PointX="18" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.TIPO_SOLICITUD" Width="1.5" PointX="15.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.TIPO_USUARIO" Width="1.5" PointX="7.5" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.USUARIO" Width="1.5" PointX="9.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrevencionRiesgos.DALC.VISITA" Width="1.5" PointX="18" PointY="17.875" IsExpanded="true" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.ACCIDENTE_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.ACCIDENTE_USUARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.ASESORIA_MOTIVO_ASESORIA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.ASESORIA_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.ASESORIA_USUARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.CAPACITACION_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.CAPACITACION_USUARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.CHEQUEO_CLIENTE_EMPRESA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.CHEQUEO_VISITA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.CIUDAD_REGION_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.COMUNA_CIUDAD_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.CLIENTE_EMPRESA_COMUNA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.CLIENTE_EMPRESA_GIRO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.FACTURA_CLIENTE_EMPRESA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.SERVICIO_CLIENTE_EMPRESA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.DETALLE_FACTURA_FACTURA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.FACTURA_PAGO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.FACTURA_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.LLAMADO_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.LLAMADO_USUARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.MULTA_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.MULTA_USUARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.SERVICIO_PLAN_PAGO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.SOLICITUD_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.VISITA_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.SOLICITUD_TIPO_SOLICITUD_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.SOLICITUD_USUARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.USUARIO_TIPO_USUARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="PrevencionRiesgos.DALC.VISITA_USUARIO_FK" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

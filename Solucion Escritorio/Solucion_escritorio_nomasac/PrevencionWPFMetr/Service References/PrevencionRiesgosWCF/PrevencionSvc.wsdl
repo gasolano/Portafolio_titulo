@@ -42,6 +42,12 @@
   <wsdl:message name="IPrevencion_ReadTipoUsuario_OutputMessage">
     <wsdl:part name="parameters" element="tns:ReadTipoUsuarioResponse" />
   </wsdl:message>
+  <wsdl:message name="IPrevencion_CreateClienteEmpresa_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateClienteEmpresa" />
+  </wsdl:message>
+  <wsdl:message name="IPrevencion_CreateClienteEmpresa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateClienteEmpresaResponse" />
+  </wsdl:message>
   <wsdl:message name="IPrevencion_ReadClienteEmpresa_InputMessage">
     <wsdl:part name="parameters" element="tns:ReadClienteEmpresa" />
   </wsdl:message>
@@ -59,6 +65,18 @@
   </wsdl:message>
   <wsdl:message name="IPrevencion_ReadUsuariosDesplegar_OutputMessage">
     <wsdl:part name="parameters" element="tns:ReadUsuariosDesplegarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPrevencion_ReadRegionCiudadComunaCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReadRegionCiudadComunaCollection" />
+  </wsdl:message>
+  <wsdl:message name="IPrevencion_ReadRegionCiudadComunaCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadRegionCiudadComunaCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPrevencion_ReadGiroCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReadGiroCollection" />
+  </wsdl:message>
+  <wsdl:message name="IPrevencion_ReadGiroCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadGiroCollectionResponse" />
   </wsdl:message>
   <wsdl:portType name="IPrevencion">
     <wsdl:operation name="CreateUsuario">
@@ -85,6 +103,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IPrevencion/ReadTipoUsuario" message="tns:IPrevencion_ReadTipoUsuario_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IPrevencion/ReadTipoUsuarioResponse" message="tns:IPrevencion_ReadTipoUsuario_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="CreateClienteEmpresa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPrevencion/CreateClienteEmpresa" message="tns:IPrevencion_CreateClienteEmpresa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPrevencion/CreateClienteEmpresaResponse" message="tns:IPrevencion_CreateClienteEmpresa_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="ReadClienteEmpresa">
       <wsdl:input wsaw:Action="http://tempuri.org/IPrevencion/ReadClienteEmpresa" message="tns:IPrevencion_ReadClienteEmpresa_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IPrevencion/ReadClienteEmpresaResponse" message="tns:IPrevencion_ReadClienteEmpresa_OutputMessage" />
@@ -96,6 +118,14 @@
     <wsdl:operation name="ReadUsuariosDesplegar">
       <wsdl:input wsaw:Action="http://tempuri.org/IPrevencion/ReadUsuariosDesplegar" message="tns:IPrevencion_ReadUsuariosDesplegar_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IPrevencion/ReadUsuariosDesplegarResponse" message="tns:IPrevencion_ReadUsuariosDesplegar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadRegionCiudadComunaCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPrevencion/ReadRegionCiudadComunaCollection" message="tns:IPrevencion_ReadRegionCiudadComunaCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPrevencion/ReadRegionCiudadComunaCollectionResponse" message="tns:IPrevencion_ReadRegionCiudadComunaCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadGiroCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPrevencion/ReadGiroCollection" message="tns:IPrevencion_ReadGiroCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPrevencion/ReadGiroCollectionResponse" message="tns:IPrevencion_ReadGiroCollection_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IPrevencion" type="tns:IPrevencion">
@@ -154,6 +184,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="CreateClienteEmpresa">
+      <soap:operation soapAction="http://tempuri.org/IPrevencion/CreateClienteEmpresa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="ReadClienteEmpresa">
       <soap:operation soapAction="http://tempuri.org/IPrevencion/ReadClienteEmpresa" style="document" />
       <wsdl:input>
@@ -174,6 +213,24 @@
     </wsdl:operation>
     <wsdl:operation name="ReadUsuariosDesplegar">
       <soap:operation soapAction="http://tempuri.org/IPrevencion/ReadUsuariosDesplegar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadRegionCiudadComunaCollection">
+      <soap:operation soapAction="http://tempuri.org/IPrevencion/ReadRegionCiudadComunaCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadGiroCollection">
+      <soap:operation soapAction="http://tempuri.org/IPrevencion/ReadGiroCollection" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

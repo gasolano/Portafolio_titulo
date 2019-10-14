@@ -36,7 +36,27 @@ namespace PrevencionRiesgos.Negocio
 
         public bool Create()
         {
-            throw new NotImplementedException();
+            try
+            {
+                DALC.CLIENTE_EMPRESA info = new DALC.CLIENTE_EMPRESA()
+                {
+                    RUT = Rut,
+                    ID_GIRO = IdGiro,
+                    CLIENTE_MOROSO = ClienteMoroso,
+                    CORREO = Correo,
+                    DIRECCION = Direccion,
+                    ID_COMUNA = IdComuna,
+                    NOMBRE = Nombre,
+                    TELEFONO = Telefono
+                };
+                CommonBC.Modelo.CLIENTE_EMPRESA.Add(info);
+                CommonBC.Modelo.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
         public bool Read()
@@ -70,6 +90,11 @@ namespace PrevencionRiesgos.Negocio
         public bool Delete()
         {
             throw new NotImplementedException();
+        }
+
+        public static ClienteEmpresa Deserializar(string xml)
+        {
+            return (ClienteEmpresa)CommonBC.Deserializar<ClienteEmpresa>(xml);
         }
     }
 }

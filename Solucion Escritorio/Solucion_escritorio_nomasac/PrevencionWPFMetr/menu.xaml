@@ -21,7 +21,7 @@
             <Image x:Name="image" Height="156" Width="118" Source="imagenes/UsuariosMenu.png"/>
         </Controls:Tile>
         <Image x:Name="image1" HorizontalAlignment="Left" Height="32" Margin="0,-32,0,0" VerticalAlignment="Top" Width="34" Source="imagenes/Guard.png"/>
-        <Controls:Tile Margin="34,319,772,17" Height="Auto" Width="Auto" Title="Clientes" TitleFontSize="17" Click="Tile_Click" Opacity="0.95">
+        <Controls:Tile Margin="34,319,772,17" Height="Auto" Width="Auto" Title="Clientes" TitleFontSize="17" Opacity="0.95" Click="Clientes_Click">
 
             <Controls:Tile.Effect>
                 <DropShadowEffect/>

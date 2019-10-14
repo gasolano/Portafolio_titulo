@@ -19,7 +19,7 @@ namespace PrevencionRiesgos.DALC
             this.USUARIO = new HashSet<USUARIO>();
         }
     
-        public long ID_TIPO { get; set; }
+        public decimal ID_TIPO { get; set; }
         public string NOMBRE { get; set; }
     
         public virtual ICollection<USUARIO> USUARIO { get; set; }

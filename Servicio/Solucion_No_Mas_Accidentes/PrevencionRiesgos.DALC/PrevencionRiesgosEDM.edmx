@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Model.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="12.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="PrevencionRiesgos.DALC.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="ACCIDENTE">
           <Key>
             <PropertyRef Name="ID_ACCIDENTE" />
@@ -632,29 +632,29 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="ModelStoreContainer">
-          <EntitySet Name="ACCIDENTE" EntityType="Self.ACCIDENTE" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="ASESORIA" EntityType="Self.ASESORIA" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="CAPACITACION" EntityType="Self.CAPACITACION" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="CHEQUEO" EntityType="Self.CHEQUEO" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="CIUDAD" EntityType="Self.CIUDAD" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="CLIENTE_EMPRESA" EntityType="Self.CLIENTE_EMPRESA" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="COMUNA" EntityType="Self.COMUNA" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="DETALLE_FACTURA" EntityType="Self.DETALLE_FACTURA" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="FACTURA" EntityType="Self.FACTURA" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="GIRO" EntityType="Self.GIRO" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="LLAMADO" EntityType="Self.LLAMADO" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="MOTIVO_ASESORIA" EntityType="Self.MOTIVO_ASESORIA" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="MULTA" EntityType="Self.MULTA" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="PAGO" EntityType="Self.PAGO" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="PLAN_PAGO" EntityType="Self.PLAN_PAGO" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="REGION" EntityType="Self.REGION" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="SERVICIO" EntityType="Self.SERVICIO" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="SOLICITUD" EntityType="Self.SOLICITUD" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="TIPO_SOLICITUD" EntityType="Self.TIPO_SOLICITUD" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="TIPO_USUARIO" EntityType="Self.TIPO_USUARIO" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="USUARIO" EntityType="Self.USUARIO" Schema="PR" store:Type="Tables" />
-          <EntitySet Name="VISITA" EntityType="Self.VISITA" Schema="PR" store:Type="Tables" />
+        <EntityContainer Name="PrevencionRiesgosDALCStoreContainer">
+          <EntitySet Name="ACCIDENTE" EntityType="Self.ACCIDENTE" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="ASESORIA" EntityType="Self.ASESORIA" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="CAPACITACION" EntityType="Self.CAPACITACION" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="CHEQUEO" EntityType="Self.CHEQUEO" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="CIUDAD" EntityType="Self.CIUDAD" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="CLIENTE_EMPRESA" EntityType="Self.CLIENTE_EMPRESA" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="COMUNA" EntityType="Self.COMUNA" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="DETALLE_FACTURA" EntityType="Self.DETALLE_FACTURA" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="FACTURA" EntityType="Self.FACTURA" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="GIRO" EntityType="Self.GIRO" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="LLAMADO" EntityType="Self.LLAMADO" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="MOTIVO_ASESORIA" EntityType="Self.MOTIVO_ASESORIA" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="MULTA" EntityType="Self.MULTA" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="PAGO" EntityType="Self.PAGO" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="PLAN_PAGO" EntityType="Self.PLAN_PAGO" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="REGION" EntityType="Self.REGION" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="SERVICIO" EntityType="Self.SERVICIO" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="SOLICITUD" EntityType="Self.SOLICITUD" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="TIPO_SOLICITUD" EntityType="Self.TIPO_SOLICITUD" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="TIPO_USUARIO" EntityType="Self.TIPO_USUARIO" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="USUARIO" EntityType="Self.USUARIO" Schema="NMA" store:Type="Tables" />
+          <EntitySet Name="VISITA" EntityType="Self.VISITA" Schema="NMA" store:Type="Tables" />
           <AssociationSet Name="ACCIDENTE_SERVICIO_FK" Association="Self.ACCIDENTE_SERVICIO_FK">
             <End Role="SERVICIO" EntitySet="SERVICIO" />
             <End Role="ACCIDENTE" EntitySet="ACCIDENTE" />
@@ -776,7 +776,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="PrevencionRiesgos.DALC" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="ACCIDENTE">
           <Key>
             <PropertyRef Name="ID_ACCIDENTE" />
@@ -1067,7 +1067,7 @@
           <Key>
             <PropertyRef Name="ID_TIPO" />
           </Key>
-          <Property Name="ID_TIPO" Type="Int64" Nullable="false" />
+          <Property Name="ID_TIPO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
           <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="USUARIO" Relationship="Self.USUARIO_TIPO_USUARIO_FK" FromRole="TIPO_USUARIO" ToRole="USUARIO" />
         </EntityType>
@@ -1076,7 +1076,7 @@
             <PropertyRef Name="RUT" />
           </Key>
           <Property Name="RUT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ID_TIPO" Type="Int64" Nullable="false" />
+          <Property Name="ID_TIPO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
           <Property Name="PASS" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="NOMBRES" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="APELLIDOP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
@@ -1084,8 +1084,8 @@
           <Property Name="CORREO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="TELEFONO" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="DIRECCION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="MOROSO" Type="Int64" Nullable="false" />
-          <Property Name="DAR_BAJA" Type="Int64" Nullable="false" />
+          <Property Name="MOROSO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="DAR_BAJA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
           <Property Name="RUT_EMPRESA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="ACCIDENTE" Relationship="Self.ACCIDENTE_USUARIO_FK" FromRole="USUARIO" ToRole="ACCIDENTE" />
           <NavigationProperty Name="ASESORIA" Relationship="Self.ASESORIA_USUARIO_FK" FromRole="USUARIO" ToRole="ASESORIA" />
@@ -1607,9 +1607,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="PrevencionRiesgosEntities">
+        <EntityContainerMapping StorageEntityContainer="PrevencionRiesgosDALCStoreContainer" CdmEntityContainer="PrevencionRiesgosEntities">
           <EntitySetMapping Name="ACCIDENTE">
-            <EntityTypeMapping TypeName="Model.ACCIDENTE">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.ACCIDENTE">
               <MappingFragment StoreEntitySet="ACCIDENTE">
                 <ScalarProperty Name="ID_ACCIDENTE" ColumnName="ID_ACCIDENTE" />
                 <ScalarProperty Name="ID_SERVICIO" ColumnName="ID_SERVICIO" />
@@ -1624,7 +1624,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ASESORIA">
-            <EntityTypeMapping TypeName="Model.ASESORIA">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.ASESORIA">
               <MappingFragment StoreEntitySet="ASESORIA">
                 <ScalarProperty Name="ID_ASESORIA" ColumnName="ID_ASESORIA" />
                 <ScalarProperty Name="ID_SERVICIO" ColumnName="ID_SERVICIO" />
@@ -1637,7 +1637,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CAPACITACION">
-            <EntityTypeMapping TypeName="Model.CAPACITACION">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.CAPACITACION">
               <MappingFragment StoreEntitySet="CAPACITACION">
                 <ScalarProperty Name="ID_CAPACITACIO" ColumnName="ID_CAPACITACIO" />
                 <ScalarProperty Name="ID_SERVICIO" ColumnName="ID_SERVICIO" />
@@ -1652,7 +1652,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CHEQUEO">
-            <EntityTypeMapping TypeName="Model.CHEQUEO">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.CHEQUEO">
               <MappingFragment StoreEntitySet="CHEQUEO">
                 <ScalarProperty Name="ID_SERVICIO" ColumnName="ID_SERVICIO" />
                 <ScalarProperty Name="ID_CHEQUEO" ColumnName="ID_CHEQUEO" />
@@ -1666,7 +1666,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CIUDAD">
-            <EntityTypeMapping TypeName="Model.CIUDAD">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.CIUDAD">
               <MappingFragment StoreEntitySet="CIUDAD">
                 <ScalarProperty Name="ID_CIUDAD" ColumnName="ID_CIUDAD" />
                 <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
@@ -1675,7 +1675,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CLIENTE_EMPRESA">
-            <EntityTypeMapping TypeName="Model.CLIENTE_EMPRESA">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.CLIENTE_EMPRESA">
               <MappingFragment StoreEntitySet="CLIENTE_EMPRESA">
                 <ScalarProperty Name="RUT" ColumnName="RUT" />
                 <ScalarProperty Name="ID_GIRO" ColumnName="ID_GIRO" />
@@ -1689,7 +1689,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="COMUNA">
-            <EntityTypeMapping TypeName="Model.COMUNA">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.COMUNA">
               <MappingFragment StoreEntitySet="COMUNA">
                 <ScalarProperty Name="ID_COMUNA" ColumnName="ID_COMUNA" />
                 <ScalarProperty Name="ID_CIUDAD" ColumnName="ID_CIUDAD" />
@@ -1698,7 +1698,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DETALLE_FACTURA">
-            <EntityTypeMapping TypeName="Model.DETALLE_FACTURA">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.DETALLE_FACTURA">
               <MappingFragment StoreEntitySet="DETALLE_FACTURA">
                 <ScalarProperty Name="ID_ARTICULO" ColumnName="ID_ARTICULO" />
                 <ScalarProperty Name="FACTURA_NRO_FACTURA" ColumnName="FACTURA_NRO_FACTURA" />
@@ -1710,7 +1710,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="FACTURA">
-            <EntityTypeMapping TypeName="Model.FACTURA">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.FACTURA">
               <MappingFragment StoreEntitySet="FACTURA">
                 <ScalarProperty Name="NRO_FACTURA" ColumnName="NRO_FACTURA" />
                 <ScalarProperty Name="ID_SERVICIO" ColumnName="ID_SERVICIO" />
@@ -1735,7 +1735,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="GIRO">
-            <EntityTypeMapping TypeName="Model.GIRO">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.GIRO">
               <MappingFragment StoreEntitySet="GIRO">
                 <ScalarProperty Name="ID_GIRO" ColumnName="ID_GIRO" />
                 <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
@@ -1743,7 +1743,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="LLAMADO">
-            <EntityTypeMapping TypeName="Model.LLAMADO">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.LLAMADO">
               <MappingFragment StoreEntitySet="LLAMADO">
                 <ScalarProperty Name="ID_LLAMADO" ColumnName="ID_LLAMADO" />
                 <ScalarProperty Name="ID_SERVICIO" ColumnName="ID_SERVICIO" />
@@ -1758,7 +1758,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="MOTIVO_ASESORIA">
-            <EntityTypeMapping TypeName="Model.MOTIVO_ASESORIA">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.MOTIVO_ASESORIA">
               <MappingFragment StoreEntitySet="MOTIVO_ASESORIA">
                 <ScalarProperty Name="ID_MOTIVO" ColumnName="ID_MOTIVO" />
                 <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
@@ -1766,7 +1766,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="MULTA">
-            <EntityTypeMapping TypeName="Model.MULTA">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.MULTA">
               <MappingFragment StoreEntitySet="MULTA">
                 <ScalarProperty Name="ID_MULTA" ColumnName="ID_MULTA" />
                 <ScalarProperty Name="ID_SERVICIO" ColumnName="ID_SERVICIO" />
@@ -1780,7 +1780,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PAGO">
-            <EntityTypeMapping TypeName="Model.PAGO">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.PAGO">
               <MappingFragment StoreEntitySet="PAGO">
                 <ScalarProperty Name="ID_PAGO" ColumnName="ID_PAGO" />
                 <ScalarProperty Name="FUERA_DE_PLAZO" ColumnName="FUERA_DE_PLAZO" />
@@ -1789,7 +1789,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PLAN_PAGO">
-            <EntityTypeMapping TypeName="Model.PLAN_PAGO">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.PLAN_PAGO">
               <MappingFragment StoreEntitySet="PLAN_PAGO">
                 <ScalarProperty Name="ID_PLAN" ColumnName="ID_PLAN" />
                 <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
@@ -1811,7 +1811,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="REGION">
-            <EntityTypeMapping TypeName="Model.REGION">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.REGION">
               <MappingFragment StoreEntitySet="REGION">
                 <ScalarProperty Name="ID_REGION" ColumnName="ID_REGION" />
                 <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
@@ -1819,7 +1819,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SERVICIO">
-            <EntityTypeMapping TypeName="Model.SERVICIO">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.SERVICIO">
               <MappingFragment StoreEntitySet="SERVICIO">
                 <ScalarProperty Name="ID_SERVICIO" ColumnName="ID_SERVICIO" />
                 <ScalarProperty Name="RUT_EMPRESA" ColumnName="RUT_EMPRESA" />
@@ -1837,7 +1837,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SOLICITUD">
-            <EntityTypeMapping TypeName="Model.SOLICITUD">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.SOLICITUD">
               <MappingFragment StoreEntitySet="SOLICITUD">
                 <ScalarProperty Name="ID_SOLICITUD" ColumnName="ID_SOLICITUD" />
                 <ScalarProperty Name="ID_SERVICIO" ColumnName="ID_SERVICIO" />
@@ -1850,7 +1850,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TIPO_SOLICITUD">
-            <EntityTypeMapping TypeName="Model.TIPO_SOLICITUD">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.TIPO_SOLICITUD">
               <MappingFragment StoreEntitySet="TIPO_SOLICITUD">
                 <ScalarProperty Name="ID_TIPO_SOLICITUD" ColumnName="ID_TIPO_SOLICITUD" />
                 <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
@@ -1858,7 +1858,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TIPO_USUARIO">
-            <EntityTypeMapping TypeName="Model.TIPO_USUARIO">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.TIPO_USUARIO">
               <MappingFragment StoreEntitySet="TIPO_USUARIO">
                 <ScalarProperty Name="ID_TIPO" ColumnName="ID_TIPO" />
                 <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
@@ -1866,7 +1866,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="USUARIO">
-            <EntityTypeMapping TypeName="Model.USUARIO">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.USUARIO">
               <MappingFragment StoreEntitySet="USUARIO">
                 <ScalarProperty Name="RUT" ColumnName="RUT" />
                 <ScalarProperty Name="ID_TIPO" ColumnName="ID_TIPO" />
@@ -1884,7 +1884,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="VISITA">
-            <EntityTypeMapping TypeName="Model.VISITA">
+            <EntityTypeMapping TypeName="PrevencionRiesgos.DALC.VISITA">
               <MappingFragment StoreEntitySet="VISITA">
                 <ScalarProperty Name="ID_SERVICIO" ColumnName="ID_SERVICIO" />
                 <ScalarProperty Name="ID_VISITA" ColumnName="ID_VISITA" />

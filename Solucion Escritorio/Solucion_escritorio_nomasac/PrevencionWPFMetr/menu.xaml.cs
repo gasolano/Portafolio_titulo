@@ -45,5 +45,11 @@ namespace PrevencionWPFMetr
             UsuariosWindow usu = new UsuariosWindow();
             usu.Show();
         }
+
+        private void Clientes_Click(object sender, RoutedEventArgs e)
+        {
+            EmpresasWindow ventana = new EmpresasWindow();
+            ventana.Show();
+        }
     }
 }

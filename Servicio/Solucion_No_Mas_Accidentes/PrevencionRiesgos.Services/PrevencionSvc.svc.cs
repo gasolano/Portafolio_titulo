@@ -13,6 +13,11 @@ namespace PrevencionRiesgos.Services
     // NOTE: para iniciar el Cliente de prueba WCF para probar este servicio, seleccione Service1.svc o Service1.svc.cs en el Explorador de soluciones e inicie la depuración.
     public class PrevencionSvc : IPrevencion
     {
+        private T Deserializar<T>(string xml)
+        {
+            return (T)CommonBC.Deserializar<T>(xml);
+        }
+
         public bool CreateUsuario(string xml)
         {
 
@@ -78,6 +83,28 @@ namespace PrevencionRiesgos.Services
         }
 
 
+        public bool CreateClienteEmpresa(string xml)
+        {
+
+            try
+            {
+
+                ClienteEmpresa info = Deserializar<ClienteEmpresa>(xml);
+                if (info.Create())
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                return false;
+            }
+        }
         public string ReadClienteEmpresa()
         {
 
@@ -93,6 +120,8 @@ namespace PrevencionRiesgos.Services
                 return null;
             }
         }
+
+
 
         public bool ModificarUsuario(string xml)
         {
@@ -172,6 +201,39 @@ namespace PrevencionRiesgos.Services
                 return null;
             }
         }
+
+        public string ReadRegionCiudadComunaCollection()
+        {
+
+            try
+            {
+
+                return new RegionCollection().Serializar();
+
+            }
+            catch (Exception ex)
+            {
+
+                return null;
+            }
+        }
+
+
+        public string ReadGiroCollection()
+        {
+
+            try
+            {
+
+                return new GiroCollection().Serializar();
+
+            }
+            catch (Exception ex)
+            {
+
+                return null;
+            }
+        }
     }
-    
+
 }

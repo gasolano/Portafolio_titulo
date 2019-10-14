@@ -32,6 +32,8 @@ namespace PrevencionRiesgos.Services
         string ReadTipoUsuario();
 
         [OperationContract]
+        bool CreateClienteEmpresa(string xml);
+        [OperationContract]
         string ReadClienteEmpresa();
 
         [OperationContract]
@@ -40,5 +42,10 @@ namespace PrevencionRiesgos.Services
         [OperationContract]
         string ReadUsuariosDesplegar();
 
+        [OperationContract]
+        string ReadRegionCiudadComunaCollection();
+
+        [OperationContract]
+        string ReadGiroCollection();
     }
 }

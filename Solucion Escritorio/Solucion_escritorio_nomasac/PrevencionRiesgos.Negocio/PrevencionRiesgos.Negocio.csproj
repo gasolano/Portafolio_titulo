@@ -40,11 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ciudad.cs" />
     <Compile Include="ClienteEmpresa.cs" />
     <Compile Include="ClienteEmpresaCollection.cs" />
     <Compile Include="CommonBC.cs" />
+    <Compile Include="Comuna.cs" />
+    <Compile Include="Giro.cs" />
+    <Compile Include="GiroCollection.cs" />
+    <Compile Include="RegionCollection.cs" />
     <Compile Include="ICrud.cs" />
     <Compile Include="IDGUsuario.cs" />
+    <Compile Include="Region.cs" />
     <Compile Include="TipoUsuario.cs" />
     <Compile Include="TipoUsuarioCollection.cs" />
     <Compile Include="Usuario.cs" />

@@ -132,32 +132,30 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
     <EntityDeploy Include="PrevencionRiesgosEDM.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>PrevencionRiesgosEDM.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
-    <None Include="packages.config" />
     <None Include="PrevencionRiesgosEDM.edmx.diagram">
       <DependentUpon>PrevencionRiesgosEDM.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="PrevencionRiesgosEDM.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>PrevencionRiesgosEDM.Context.cs</LastGenOutput>
       <DependentUpon>PrevencionRiesgosEDM.edmx</DependentUpon>
+      <LastGenOutput>PrevencionRiesgosEDM.Context.cs</LastGenOutput>
     </Content>
     <Content Include="PrevencionRiesgosEDM.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>PrevencionRiesgosEDM.edmx</DependentUpon>
       <LastGenOutput>PrevencionRiesgosEDM.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

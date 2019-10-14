@@ -51,6 +51,12 @@ namespace PrevencionWPFMetr.PrevencionRiesgosWCF {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/ReadTipoUsuario", ReplyAction="http://tempuri.org/IPrevencion/ReadTipoUsuarioResponse")]
         System.Threading.Tasks.Task<string> ReadTipoUsuarioAsync();
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/CreateClienteEmpresa", ReplyAction="http://tempuri.org/IPrevencion/CreateClienteEmpresaResponse")]
+        bool CreateClienteEmpresa(string xml);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/CreateClienteEmpresa", ReplyAction="http://tempuri.org/IPrevencion/CreateClienteEmpresaResponse")]
+        System.Threading.Tasks.Task<bool> CreateClienteEmpresaAsync(string xml);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/ReadClienteEmpresa", ReplyAction="http://tempuri.org/IPrevencion/ReadClienteEmpresaResponse")]
         string ReadClienteEmpresa();
         
@@ -68,6 +74,18 @@ namespace PrevencionWPFMetr.PrevencionRiesgosWCF {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/ReadUsuariosDesplegar", ReplyAction="http://tempuri.org/IPrevencion/ReadUsuariosDesplegarResponse")]
         System.Threading.Tasks.Task<string> ReadUsuariosDesplegarAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/ReadRegionCiudadComunaCollection", ReplyAction="http://tempuri.org/IPrevencion/ReadRegionCiudadComunaCollectionResponse")]
+        string ReadRegionCiudadComunaCollection();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/ReadRegionCiudadComunaCollection", ReplyAction="http://tempuri.org/IPrevencion/ReadRegionCiudadComunaCollectionResponse")]
+        System.Threading.Tasks.Task<string> ReadRegionCiudadComunaCollectionAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/ReadGiroCollection", ReplyAction="http://tempuri.org/IPrevencion/ReadGiroCollectionResponse")]
+        string ReadGiroCollection();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPrevencion/ReadGiroCollection", ReplyAction="http://tempuri.org/IPrevencion/ReadGiroCollectionResponse")]
+        System.Threading.Tasks.Task<string> ReadGiroCollectionAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -145,6 +163,14 @@ namespace PrevencionWPFMetr.PrevencionRiesgosWCF {
             return base.Channel.ReadTipoUsuarioAsync();
         }
         
+        public bool CreateClienteEmpresa(string xml) {
+            return base.Channel.CreateClienteEmpresa(xml);
+        }
+        
+        public System.Threading.Tasks.Task<bool> CreateClienteEmpresaAsync(string xml) {
+            return base.Channel.CreateClienteEmpresaAsync(xml);
+        }
+        
         public string ReadClienteEmpresa() {
             return base.Channel.ReadClienteEmpresa();
         }
@@ -167,6 +193,22 @@ namespace PrevencionWPFMetr.PrevencionRiesgosWCF {
         
         public System.Threading.Tasks.Task<string> ReadUsuariosDesplegarAsync() {
             return base.Channel.ReadUsuariosDesplegarAsync();
+        }
+        
+        public string ReadRegionCiudadComunaCollection() {
+            return base.Channel.ReadRegionCiudadComunaCollection();
+        }
+        
+        public System.Threading.Tasks.Task<string> ReadRegionCiudadComunaCollectionAsync() {
+            return base.Channel.ReadRegionCiudadComunaCollectionAsync();
+        }
+        
+        public string ReadGiroCollection() {
+            return base.Channel.ReadGiroCollection();
+        }
+        
+        public System.Threading.Tasks.Task<string> ReadGiroCollectionAsync() {
+            return base.Channel.ReadGiroCollectionAsync();
         }
     }
 }

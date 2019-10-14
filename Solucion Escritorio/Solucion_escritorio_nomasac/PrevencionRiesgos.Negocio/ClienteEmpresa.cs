@@ -34,5 +34,9 @@ namespace PrevencionRiesgos.Negocio
             ClienteMoroso = 0;
         }
 
+        public string Serializar()
+        {
+            return CommonBC.Serializar<ClienteEmpresa>(this);
+        }
     }
 }
